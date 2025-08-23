@@ -1,0 +1,97 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = QUESTIONPAPER_QUIZ
+build_property.RootNamespace = QUESTIONPAPER_QUIZ
+build_property.ProjectDir = D:\ajay sir\quiznew\NEW MODULE EXAM\QUESTIONPAPER_QUIZ\QUESTIONPAPER_QUIZ\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ajay sir\quiznew\NEW MODULE EXAM\QUESTIONPAPER_QUIZ\QUESTIONPAPER_QUIZ
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/certificate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjZXJ0aWZpY2F0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/Examlogin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeGFtbG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/forgotForgot.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxmb3Jnb3RGb3Jnb3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/MultiselectDropdown.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNdWx0aXNlbGVjdERyb3Bkb3duLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/REStartExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSRVN0YXJ0RXhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/score.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxzY29yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/StartExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTdGFydEV4YW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Home/Welcome.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxXZWxjb21lLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Shared/_Layout1.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQxLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-4kg4x4v0qf
+
+[D:/ajay sir/quiznew/NEW MODULE EXAM/QUESTIONPAPER_QUIZ/QUESTIONPAPER_QUIZ/Views/Shared/_Layoutscore.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRzY29yZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-u5bwpef411

@@ -1,0 +1,302 @@
+﻿@{
+    ViewData["Title"] = "Dainik Jagran Quiz - Participate & Win Prizes!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .left {
+        width: 25% !important;
+        margin-right: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        text-align: left;
+    }
+
+    .right {
+        width: 70% !important;
+        display: inline-block;
+        float: none;
+        text-align: left !important;
+    }
+
+        .right input {
+            padding: 10px !important;
+            width: 100%;
+            !important
+        }
+
+    .login {
+        border: 10px solid #063b6d;
+        padding: 15px;
+        box-shadow: rgb(99, 51, 3) 2px 2px 15px;
+        clip: rect(0px auto auto 0px);
+        background-color: white;
+        height: 370px;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @@media (max-width:767px) {
+        .left {
+            width: 100% !important;
+            margin-right: 0px;
+            display: block;
+        }
+
+        .login {
+            height: 500px !important
+        }
+    }
+</style>
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+
+<div id="middle_new" style="width:100%;">
+
+    <input type="hidden" id="hdfExamId" value="@ViewBag.ExamId" />
+    <div class="contact" style="margin-bottom: 20px; width:100%;">
+
+
+        <div class="login" id="login">
+            <div style="width:100%;">
+                <div style="margin-bottom:10px;  text-align:center; color:#005195; font-size:14px;"><b>लॉग इन करें / Login?</b></div>
+
+
+                <br />
+                <div class="l-box-left">
+                    <div class="left"><label for="username">अपना ईमेल बताये   <br /> Enter your email </label></div><div class="right">
+                        <input type="text" name="txtEmail" id="txtEmail" runat="server" maxlength="255" class="valid" oninput="validateEmailInput()"  />
+                        <span id="emailFeedback" style="color: red;"></span>
+                    </div>
+
+                </div>
+                <div class="l-box-left">
+                    <div class="left"><label for="username">पासवर्ड   <br /> Password </label></div><div class="right">
+                        <input type="text" name="txtpassword" id="txtpassword" runat="server" maxlength="255" class="valid"  />
+                        <span id="passwodFeedback" style="color: red;"></span>
+                    </div>
+
+                </div>
+
+
+                <div class="clr" style="margin-bottom:30px;">
+                    <div class="left"><label for="code">Type the code shown</label><span class="errors">*</span></div>
+                    <div class="right">
+                        <input runat="server" name="txtContCode" type="text" id="txtContCode" style="width:150px; display:inline-block;">
+                        <span style="display:inline-block; margin-right:10px; margin-top:10px;"><img id="imgcaptcha" style="height:35px;"></span>
+                        <span class="code"><a href="javascript:void(0)" style="margin:4px 0px 0px 0px; padding:0px 0px 5px 10px;" onclick="javascript:return fngetnewcode();">Change Code</a></span>
+                    </div>
+                </div>
+
+                <div class="l-box-right">
+                    <div style="float:right; padding:15px 5px 0;clear:both;">
+                        <div id="divloading" style="display:none;height:30px;width:30px;margin-right:7px;"> <img src="/images/bigloader1.GIF" style="height:30px;width:30px;" /></div><div style="display:inline-block; margin-bottom:10px;"> <input type="button" id="btnSubmit" value="Submit" /></div><br><div class="forgot-pass"><a href="/home/forgotForgot">Forgot Password?</a></div>
+                       @*  @ViewBag.host12 *@
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+  
+</div>
+
+
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+@* <script type="text/javascript" src="~/js/DELHIELECTIONQUIZ.js"></script> *@
+
+<script type="text/javascript">
+
+
+    function validateEmailInput() {
+        const emailInput = document.getElementById('txtEmail').value;
+        const feedbackElement = document.getElementById('emailFeedback');
+        const emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+
+        if (emailRegex.test(emailInput)) {
+            feedbackElement.textContent = ""; // Email is valid
+        } else {
+            feedbackElement.textContent = "Please enter a valid email address.";
+        }
+    }
+    $(document).ready(function () {
+        fngetnewcode();
+    });
+
+    function fngetnewcode() {
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetCaptcha",
+            contentType: 'application/json; charset=utf-8',
+            datatype: "json",
+            success: function (data) {
+                $('#imgcaptcha').attr('src', 'data:image/jpeg;base64,' + data.base64Image);
+            },
+            error: function (ex) {
+                swal({
+                    title: "OOps!",
+                    text: "Please reload captcha image",
+                    icon: "error",
+                    timer: 10000,
+                });
+                //alert('Please reload captcha image');
+            }
+        });
+        return false;
+    }
+
+    function Validation() {
+        var msg = "";
+        var Email = $("#txtEmail").val();
+        if (Email == "") {
+            msg += "Please enter email\n";
+        }
+        if ($("#txtContCode").val() == "") {
+            msg += "Please enter captcha code\n";
+        }
+        return msg;
+    }
+    function Clear() {
+        $("#hiddenid").val("0");
+        $("#txtEmail").val("");
+        $("#txtContCode").val("");
+    };
+
+    $(function () {
+        $("#btnSubmit").bind("click", function () {
+
+      
+            
+
+            var uname = $("#txtEmail").val();
+             var  password = $("#txtpassword").val();
+            var chekerr = false;
+            if (uname == '' || uname == null) {
+                chekerr = true;
+
+                swal({
+                    title: "Required!",
+                    text: "Please enter the User Name",
+                    icon: "error",
+                    timer: 10000,
+                });
+             
+            }
+            
+            if (password == '' || uname == null)
+            {
+
+                swal({
+                    title: "Required!",
+                    text: "Please enter the Password ",
+                    icon: "error",
+                    timer: 10000,
+                });
+             
+               
+               chekerr = true;
+            }
+           
+            if ($("#txtContCode").val() == "") 
+            {
+                chekerr = true;
+                swal({
+                    title: "Required!",
+                    text: "Please enter captcha code ",
+                    icon: "error",
+                    timer: 10000,
+                });
+                
+            }
+
+
+            if (chekerr == false) {
+
+              
+
+                var examids = $("#hdfExamId").val();
+                var langids= "19";
+                var Captchas = $("#txtContCode").val();
+
+             document.getElementById('divloading').style.display = 'inline-block';
+                $.ajax({
+                    type: "POST",
+                    url: "/Home/fnwbloginuser",
+                 //   contentType: "application/json",
+                    data: { uname: $("#txtEmail").val(), password: $("#txtpassword").val(), examid: examids, langid: langids, Captcha:Captchas },
+                    //contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    success: function (response) {
+
+
+                        let status = response.status;
+                        let message = response.message;
+                  
+                       document.getElementById('divloading').style.display = 'none';
+                        if (message == 'ra')
+                            window.location.href = "/Home/score/" + examids + "";
+                        else if (message == 'ga')
+                            window.location.href = "/Home/welcome/" + examids + "";
+                        else if (message == 'na')
+                            swal({
+                                title: "Required!",
+                                text: "Entry for the exam will open on 15 जुलाई 2025 से 24 जुलाई 2025 ",
+                                icon: "error",
+                                timer: 10000,
+                            });
+                        // alert('Entry for the exam will open on 6th April 2025 between 8.00 AM to 8.00 PM');
+                        else if (message == 'inv')
+                            swal({
+                                title: "Required!",
+                                text: "आपके यूजर नाम और पासवर्ड पंजीकरण के अनुसार नहीं हैं । कृपया होमपेज पर पासवर्ड भूल गए लिंक का उपयोग करके अपना पासवर्ड पुनः प्राप्त करें।. ",
+                                icon: "error",
+                                timer: 10000,
+                            });
+                        else if (message == 'cc')
+                            swal({
+                                title: "Required!",
+                                text: "Wrong captcha code",
+                                icon: "error",
+                                timer: 10000,
+                            });
+
+
+                        else if (message == 'er')
+                            swal({
+                                title: "Required!",
+                                text: "There seems to be something wrong! Please try again. ",
+                                icon: "error",
+                                timer: 10000,
+                            });
+                        else if (message == 'ur')
+                            window.location.href = status;
+
+
+                    }, error: function (ex) {
+                        swal({
+                            title: "Required!",
+                            text: "Entry for the exam will open on 15 जुलाई 2025 से 24 जुलाई 2025' ",
+                            icon: "error",
+                            timer: 10000,
+                        });
+                      
+                    }
+                });
+            }
+            return false;
+        });
+    });
+    
+
+</script>

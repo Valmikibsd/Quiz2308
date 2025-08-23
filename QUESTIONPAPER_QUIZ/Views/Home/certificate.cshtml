@@ -1,0 +1,236 @@
+﻿@{
+    ViewData["Title"] = "exam login";
+  
+}
+
+
+<style>
+    .certificate {
+        display: block;
+        width: 95%;
+       /*  max-width: 1000px; */
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .certificate_cont {
+        display: block;
+        position: relative;
+    }
+
+        .certificate_cont img {
+            width: 100%;
+        }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        top: 72%;
+        left: 50%;
+        text-align: center;
+    }
+
+    .u-name {
+        display: inline-grid;
+        font-size: 30px;
+        font-weight: 800;
+        color: #f42d34;
+        margin-bottom: 10px;
+    }
+
+    .u-address {
+        display: inline-grid;
+        ;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .btn {
+        display: block;
+        text-align: center;
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+        .btn a {
+            display: inline-block;
+            padding: 5px 10px;
+            background: green;
+            color: #fff;
+            border-radius: 6px;
+            margin: 0px 5px 0px 5px
+        }
+
+            .btn a:hover {
+                color: #fff;
+            }
+</style>
+
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+
+<div class="wrapper">
+    <input type="hidden" id="hdfExamId" value="@ViewBag.ExamId" />
+    <input type="hidden" id="hdfUserId" value="@ViewBag.uid" />
+    <input type="hidden" id="hdfUserName" value="@ViewBag.uname" />
+        <input type="hidden" id="hdfaddress" value="@ViewBag.add" />
+ 
+    <input type="hidden" id="hdfTitle" />
+
+        <header>
+        <a href="/">
+        <div class="top_logo_cont">
+            <div class="logo" style="max-width: 250px">
+
+                <img src="/images/Jagran-logo.svg">
+
+
+            </div>
+          
+                <div class="logo" style="padding: 0px;"><img src="/images/adani-logo.svg"></div>
+           
+            <div class="indi-quiz" style="padding: 10px 0px 0px 0px;"><img src="/images/indiastatquiz-logo.svg"></div>
+        </div>
+        </a>
+        <div class="presents">प्रस्तुत करते हैं</div>
+        <div class="occasion" style="margin-top: 0px;">गोस्वामी तुलसीदास जयंती</div>
+        <div class="presents">31 जुलाई 2025 के अवसर पर</div>
+
+        </header>
+
+        <div class="btn">
+            <a href="#" onclick="ConvertToprint();">Print Certificate</a>
+            <a href="#" onclick="ConvertToImage();">Download Certificate</a>
+        </div>
+
+    <div id="divCertificate" class="certificate">
+        <div class="certificate_cont">   <img src="/images/Certificate.jpg" style="width: 100%;" /><div class="user-details"> <div id="txtName1" name="txtName1" class="u-name">@ViewBag.uname</div><div id="txtaddress" name="txtaddress" class="u-address">@ViewBag.add</div> </div></div>
+    </div>
+
+    </div>
+
+<input type="hidden" id="hfImageData" name="hfImageData" value="" />
+
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+<link data-require="sweet-alert" data-semver="0.4.2" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="~/heroesgenerator-master/script.js"></script>
+<script src="~/heroesgenerator-master/base64binary.js"></script>
+
+<script type="text/javascript">
+var addHtml1 = "";
+
+</script>
+
+<script type="text/javascript">
+
+    function ConvertToprint() {
+
+     
+        html2canvas(document.getElementById("divCertificate")).then(function (canvas) {
+            // Convert canvas to image
+            var imgData = canvas.toDataURL("image/png");
+
+            // Create a temporary link and trigger download
+            const win = window.open('', 'width=500,height=500', '_blank');
+            win.document.write('<img src="' + imgData + '" style="height:100%;" />');
+            win.document.close();
+            win.onload = function () {
+                win.print();
+                win.close();
+               
+            };
+
+        });
+
+
+        return false;
+    }
+
+
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+<script type="text/javascript">
+
+    function ConvertToImage() 
+    {
+            html2canvas(document.getElementById("divCertificate")).then(function (canvas) {
+                // Convert canvas to image
+                var imgData = canvas.toDataURL("image/png");
+
+                // Create a temporary link and trigger download
+                var link = document.createElement('a');
+                link.href = imgData;
+                link.download = "Certificate.png";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              
+                });
+          
+                 var jdata = {
+             uid: $('#hdfUserId').val(),examid: $("#hdfExamId").val(), type: 'updatecertdown'
+            }
+            url_add = window.location.href;
+            var data = url_add.split("://")
+            var protocol = data[0];
+            data = data[1].split("/");
+            var domain = data[0];
+            var menuname = data[1] + "/" + data[2];
+            var encrp = "";
+            var url_add = window.location.protocol + "//" + window.location.host + "/";
+            var url = url_add + 'api/ApiServices/QuizApi';
+
+        $.ajax({
+            type: "POST",
+            //url: "/Home/fngetreport",
+            url: url,
+            data: { jsonData: JSON.stringify(jdata) },
+            //data: {uid: $('#hdfUserId').val(),examid: $("#hdfExamId").val()},
+            dataType: "json",
+            success: function (res) {
+
+            },
+             error: function (ex) {
+                alert('There seems to be something wrong! Try later.');
+            }
+          });
+
+        return false;
+    }
+
+
+    $(document).ready(function () {
+
+
+
+       // $('#hdfUserName').val(data[2]);
+       // $('#txtName1').html(data[2]);
+     //  $('#txtaddress').html(data[5]);
+      //  $('#hdfaddress').val(data[5]);
+    })
+    
+
+
+</script>
+
+
+
+
+
+
+
+

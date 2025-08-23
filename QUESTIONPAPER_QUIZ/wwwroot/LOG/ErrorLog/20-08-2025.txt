@@ -1,0 +1,1 @@
+20/08/2025 16:37:13 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getrequestions"}'---Output--Conversion failed when converting the varchar value 'ajaysainim@gmail.com' to data type int.' -  -  -  -  -  - Fill

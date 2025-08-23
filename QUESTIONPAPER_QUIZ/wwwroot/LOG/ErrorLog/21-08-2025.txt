@@ -1,0 +1,11 @@
+21/08/2025 11:31:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'---Output--Column name or number of supplied values does not match table definition.
+JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 11:31:53 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'---Output--Column name or number of supplied values does not match table definition.
+JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1143,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:45 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1151,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:48 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1153,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:50 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1158,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:52 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1161,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:01:55 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1163,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill
+21/08/2025 13:02:21 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1170,"examid":"22","type":"updatereqnstime"}'---Output--JSON text is not properly formatted. Unexpected character '.' is found at position 0.' -  -  -  -  -  - Fill

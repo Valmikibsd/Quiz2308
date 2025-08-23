@@ -1,0 +1,216 @@
+﻿@{
+    ViewData["Title"] = "exam login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<style>
+    .left {
+        width: 25% !important;
+        margin-right: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        text-align: left;
+    }
+
+    .right {
+        width: 70% !important;
+        display: inline-block;
+        float: none;
+        text-align: left !important;
+    }
+
+        .right input {
+            padding: 10px !important;
+            width: 100%;
+            !important
+        }
+
+    .login {
+        border: 15px solid #063b6d;
+        padding: 15px;
+        box-shadow: rgb(99, 51, 3) 2px 2px 15px;
+        clip: rect(0px auto auto 0px);
+        background-color: white;
+        height: 350px;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @@media (max-width:767px) {
+        .left {
+            width: 100% !important;
+            margin-right: 0px;
+            display: block;
+        }
+
+        .login {
+            height: 400px !important
+        }
+    }
+</style>
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+
+<div id="middle_new" style="width:100%;">
+
+    
+    <input type="hidden" id="hdfExamId" value="@ViewBag.ExamId" />
+  
+    <div class="wrapper">
+
+        <div class="tagline" style="margin-top: 10px;">नियम एवं दिशानिर्देश</div>
+
+
+        <div class="rules_cont">
+            <ol>
+                <li><b>पात्रता:</b> यह प्रश्नोत्तरी सभी भारतीय नागरिकों के लिए खुली है, जिनकी आयु 16 वर्ष और उससे अधिक है और जिनके पास वैध पहचान प्रमाण है।</li>
+                <li><b>प्रश्नोत्तरी का दायरा:</b> प्रश्नोत्तरी के प्रश्न केवल गोस्वामी तुलसीदास द्वारा रचित रामचरितमानस पर आधारित होंगे।</li>
+                <li><b>पंजीकरण एवं ऑनलाइन परीक्षा:</b> प्रश्नोत्तरी का पंजीकरण एवं ऑनलाइन परीक्षा का पहला चरण <strong>15 जुलाई 2025</strong> से <strong>25 जुलाई 2025</strong> तक आयोजित किया जाएगा।</li>
+                <li><b>पंजीकरण विवरण:</b> प्रतिभागियों को अपना नाम, ईमेल पता, मोबाइल नंबर और अन्य आवश्यक विवरण प्रदान करने होंगे। यह जानकारी जमा करके, प्रतिभागी दैनिक जागरण और इंडियास्टैटक्विज़ को इसका उपयोग प्रश्नोत्तरी संचालन, जिसमें सत्यापन उद्देश्य भी शामिल हैं, के लिए करने की सहमति देते हैं।</li>
+                <li><b>भाषाएँ:</b> प्रश्नोत्तरी केवल हिंदी में उपलब्ध है।</li>
+                <li><b>प्रतिभाग:</b> प्रतिभागी केवल निर्दिष्ट आधिकारिक वेबसाइट के माध्यम से ही प्रश्नोत्तरी तक पहुँच सकते हैं।</li>
+                <li><b>प्रारूप:</b> प्रश्नोत्तरी में 45 बहुविकल्पीय प्रश्न होंगे, जिनमें से प्रत्येक का केवल एक सही उत्तर होगा।</li>
+                <li><b>समय सीमा:</b> प्रतिभागियों को कुल 45 प्रश्नों को 35 मिनट में पूरा करना होगा। अर्थात प्रत्येक प्रश्न के लिए केवल 45 सेकंड का निर्धारित समय मिलेगा। अतः समय का सही प्रबंधन अत्यंत आवश्यक है।</li>
+                <li><b>अंक और गति:</b> प्रश्नोत्तरी समय आधारित है। तेजी से पूरा करने से जीतने की संभावना बढ़ जाती है।</li>
+                <li><b>टाईब्रेकर:</b> टाई होने की स्थिति में, जो प्रतिभागी सबसे कम समय में प्रश्नोत्तरी पूरी करेगा, उसे विजेता घोषित किया जाएगा।</li>
+                <li><b>नकारात्मक अंकन:</b> प्रत्येक गलत उत्तर के लिए एक-तिहाई अंक काटा जाएगा।</li>
+                <li><b>प्रारंभ तंत्र:</b> जैसे ही प्रतिभागी <b>"क्विज़ शुरू करें"</b> बटन पर क्लिक करेगा, प्रश्नोत्तरी शुरू हो जाएगी।</li>
+                <li><b>प्रश्नोत्तरी समाप्त करने के नियम:</b> प्रतिभागियों को प्रश्नोत्तरी के दौरान पृष्ठ को रीफ्रेश नहीं करना चाहिए और अपनी प्रविष्टि दर्ज करने के लिए अपने उत्तर जमा  (Submit) करने होंगे।</li>
+                <li><b>प्रयासों की संख्या:</b> ऑनलाइन प्रश्नोत्तरी के पहले राउण्ड  में, प्रत्येक प्रतिभागी को केवल दो प्रयासों की अनुमति है और इनमें से, सर्वश्रेष्ठ परिणाम को स्कोरिंग के लिए लिया जाएगा।</li>
+                <li><b>ईमेल नीति:</b> भागीदारी के लिए एक ही ईमेल पते का एक से अधिक बार उपयोग नहीं किया जा सकता है।</li>
+                <li><b>भागीदारी प्रमाण पत्र:</b> सफलतापूर्वक पूरा होने पर, प्रतिभागी स्वचालित रूप से एक डिजिटल भागीदारी प्रमाण पत्र डाउनलोड कर सकते हैं।</li>
+                <li><b>पहले राउण्ड  का परिणाम:</b> पहले ऑनलाइन राउण्ड  का परिणाम <strong>28 जुलाई 2025</strong> को प्रश्नोत्तरी वेबसाइट पर प्रदर्शित किया जाएगा और शीर्ष 20 उम्मीदवारों को अंतिम राउण्ड  में भाग लेने के लिए उनके पंजीकृत ईमेल के माध्यम से सूचित किया जाएगा।</li>
+                <li><b>अंतिम राउण्ड:</b> शीर्ष 20 स्कोरर वर्चुअल फिनाले के लिए क्वालीफाई करेंगे जो <strong>30 जुलाई 2025</strong> को आयोजित किया जाएगा।</li>
+                <li><b>विजेता और पुरस्कार:</b> फाइनलिस्टों में से, शीर्ष तीन प्रदर्शन करने वालों का चयन किया जाएगा और उन्हें पुरस्कार दिए जाएंगे।</li>
+                <li><b>विजेता राशि:</b> विजेता राशि का भुगतान विजयी प्रतिभागियों के बैंक अकाउंट में सीधे ट्रांसफर किया जाएगा।  इसके अतिरिक्त उन्हें प्रमाण पत्र भी प्रदान किये जाएंगे।</li>
+                <li><b>अयोग्यता:</b> प्रश्नोत्तरी आयोजक किसी भी प्रतिभागी को कदाचार या अनुचित प्रथाओं का दोषी पाए जाने पर अयोग्य घोषित करने का अधिकार रखते हैं।</li>
+                <li><b>अंतिम निर्णय:</b> प्रश्नोत्तरी परिणामों के संबंध में आयोजक का निर्णय अंतिम और बाध्यकारी होगा। कोई पत्राचार नहीं किया जाएगा।</li>
+                <li><b>अनुपालन:</b> प्रतिभागियों को सभी प्रश्नोत्तरी नियमों और शर्तों का पालन करना होगा, जिसमें कोई भी संशोधन या अपडेट शामिल हैं।</li>
+                <li><b>अपात्रता:</b> दैनिक जागरण और डेटानेट इंडिया प्राइवेट लिमिटेड के कर्मचारी भाग लेने के लिए पात्र नहीं हैं।</li>
+                <li><b>प्रश्नोत्तरी संशोधन:</b> आयोजक अप्रत्याशित परिस्थितियों के कारण प्रश्नोत्तरी को संशोधित या बंद करने का अधिकार रखते हैं, जिसमें नियमों, शर्तों या मूल्यांकन मानदंडों में परिवर्तन शामिल हैं। कोई भी अपडेट आधिकारिक मंच पर पोस्ट किया जाएगा।</li>
+                <li><b>संशोधन:</b> प्रश्नोत्तरी आयोजक यदि आवश्यक हो तो प्रश्नोत्तरी के किसी भी भाग को रद्द या संशोधित कर सकते हैं, जिसमें उसकी शर्तें, तकनीकी पैरामीटर या मूल्यांकन मानदंड शामिल हैं।</li>
+                <li><b>विवाद समाधान:</b> भागीदारी की इन शर्तों से उत्पन्न या संबंधित किसी भी विवाद या मतभेद को डेटानेट को संदर्भित किया जाएगा, जिसका निर्णय अंतिम और बाध्यकारी होगा। न्यायिक क्षेत्राधिकार केवल दिल्ली के न्यायालयों में होगा।</li>
+            </ol>
+
+
+            <div class="accept-cond">
+                <span><input type="checkbox" id="checkBox"></span>
+                <span>
+                    मैं उपरोक्त उल्लिखित इस क्विज़ के नियमों और शर्तों से सहमत हूँ।<br>
+                </span>
+            </div>
+
+            <div class="mock-btn a" id="container"><a id="agreeLink" onclick=" return clickdata();" href="#" style="cursor:pointer;"> Enter</a></div>
+
+
+        </div>
+    </div>
+
+  
+</div>
+
+
+
+<script>
+
+
+    function closediv(ids) {
+        document.getElementById(ids).style.display = 'none';
+        return false;
+    }
+    function clickdata() {
+
+
+
+        //alert(radioValue);
+        var msg1 = "";
+        var msg = "";
+       var catedata = $("#cateid").val();
+        var selectlevel = $("#selectlevel").val();
+        if (catedata == "Select Category") {
+            msg = "Please select Category"
+        }
+        else {
+
+            msg = "";
+            $("#Catgorydatata").val(catedata);
+        }
+        if (msg == "") {
+
+            if (selectlevel == "Select Level") {
+                //msg = "Please select  level"
+            }
+            else {
+                msg = "";
+                $("#typee").val(selectlevel);
+
+            }
+        }
+        if (msg == "") {
+            return true;
+        }
+        else {
+            alert(msg);
+            return false;
+
+        }
+
+    }
+
+
+    document.getElementById('agreeLink').disabled = true;
+
+    link = document.getElementById('agreeLink').href;
+
+    document.getElementById('agreeLink').removeAttribute('href');
+</script>
+<script>
+    di = document.getElementById("container");
+    did = document.getElementById("agreeLink");
+    CHK = document.getElementById("checkBox");
+  //  var radioValue = $("input[name='language']:checked").val();
+
+    di.onclick = function (a) {
+
+        if (CHK.checked == true) {
+
+            var tyepe = $('#typee').val();
+       //     var categorydata = $('#Catgorydatata').val();
+
+            var examids = $("#hdfExamId").val();
+
+            did.setAttribute("href", "/Home/StartExam/"+ examids + "");
+
+
+
+        }
+        else {
+            document.getElementById('agreeLink').removeAttribute('href');
+        }
+
+
+    }
+
+    document.getElementById("agreeLink").disabled = false;
+
+
+</script>
+<script>
+
+
+    let url = "/StartExam.aspx";
+    setTimeout(function () {
+        window.location.href = url;
+    }, 900000)
+
+</script>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+

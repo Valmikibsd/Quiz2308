@@ -1,0 +1,216 @@
+﻿@{
+    ViewData["Title"] = "forgot password";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .left {
+        width: 25% !important;
+        margin-right: 30px;
+        display: inline-block;
+        vertical-align: middle;
+        float: none;
+        text-align: left;
+    }
+
+    .right {
+        width: 70% !important;
+        display: inline-block;
+        float: none;
+        text-align: left !important;
+    }
+
+        .right input {
+            padding: 10px !important;
+            width: 100%;
+            !important
+        }
+
+    .login {
+        border: 15px solid #063b6d;
+        padding: 15px;
+        box-shadow: rgb(99, 51, 3) 2px 2px 15px;
+        clip: rect(0px auto auto 0px);
+        background-color: white;
+        height: 300px;
+        margin-top: 10px;
+        width: 100%;
+        max-width: 550px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @@media (max-width:767px) {
+        .left {
+            width: 100% !important;
+            margin-right: 0px;
+            display: block;
+        }
+
+        .login {
+            height: 400px !important
+        }
+    }
+</style>
+<link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+<div id="middle_new" style="width:100%;">
+
+    <div class="contact" style="margin-bottom: 20px; width:100%;">
+
+
+        <div class="login" id="login">
+            <div style="width:100%;">
+                <div style="margin-bottom:10px;  text-align:center; color:#005195; font-size:14px;"><b>अपना पासवर्ड भूल गए? / Forgot your password?</b></div>
+
+
+                <br />
+                <div class="l-box-left">
+                    <div class="left"><label for="username">अपना ईमेल बताये   <br /> Enter your email </label></div><div class="right">
+                        <input type="text" name="txtEmail" id="txtEmail" runat="server" maxlength="255" class="valid" oninput="validateEmailInput()" />
+                        <span id="emailFeedback" style="color: red;"></span>
+                    </div>
+
+                </div>
+
+                <div class="clr" style="margin-bottom:30px;">
+                    <div class="left"><label for="code">Type the code shown</label><span class="errors">*</span></div>
+                    <div class="right">
+                        <input runat="server" name="txtContCode" type="text" id="txtContCode">
+                        <span style="float:left; margin-right:10px; margin-top:10px;"><img id="imgcaptcha" style="height:35px;"></span>
+                        <span class="code"><a href="javascript:void(0)" style="margin:4px 0px 0px 0px; padding:0px 0px 5px 10px;" onclick="javascript:return fngetnewcode();">Change Code</a></span>
+                    </div>
+                </div>
+
+                <div class="l-box-right">
+                    <div style="float:right; padding:15px 5px 0;clear:both; margin-top:-30px;">
+                        <div id="divloading" style="display:none;height:30px;width:30px;margin-right:7px;"> <img src="/images_ma/bigloader1.GIF" style="height:30px;width:30px;" /></div><div style="display:inline-block;"> <input type="button" id="btnSubmit" onclick="ShowData()" value="Submit" /></div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+@* <script type="text/javascript" src="~/js/DELHIELECTIONQUIZ.js"></script> *@
+
+<script type="text/javascript">
+
+
+    function validateEmailInput() {
+        const emailInput = document.getElementById('txtEmail').value;
+        const feedbackElement = document.getElementById('emailFeedback');
+        const emailRegex = /^[^\s@@]+@@[^\s@@]+\.[^\s@@]+$/;
+
+        if (emailRegex.test(emailInput)) {
+            feedbackElement.textContent = ""; // Email is valid
+        } else {
+            feedbackElement.textContent = "Please enter a valid email address.";
+        }
+    }
+    $(document).ready(function () {
+        fngetnewcode();
+    });
+
+    function fngetnewcode() {
+        $.ajax({
+            type: "POST",
+            url: "/Home/GetCaptcha",
+            contentType: 'application/json; charset=utf-8',
+            datatype: "json",
+            success: function (data) {
+                $('#imgcaptcha').attr('src', 'data:image/jpeg;base64,' + data.base64Image);
+            },
+            error: function (ex) {
+                swal({
+                    title: "OOps!",
+                    text: "Please reload captcha image",
+                    icon: "error",
+                    timer: 10000,
+                });
+                //alert('Please reload captcha image');
+            }
+        });
+        return false;
+    }
+
+    function Validation() {
+        var msg = "";
+        var Email = $("#txtEmail").val();
+        if (Email == "") {
+            msg += "Please enter email\n";
+        }
+        if ($("#txtContCode").val() == "") {
+            msg += "Please enter captcha code\n";
+        }
+        return msg;
+    }
+    function Clear() {
+        $("#hiddenid").val("0");
+        $("#txtEmail").val("");
+        $("#txtContCode").val("");
+    };
+    function ShowData() {
+        var electionData = {
+            type: 3,
+            Email: $("#txtEmail").val(),
+            Captcha: $("#txtContCode").val()
+        }
+        var vali = Validation();
+        if (vali == "") {
+            $.ajax({
+                url: "/api/Apiservices/GetDate", // Your API endpoint
+                type: "POST",
+                contentType: "application/json",
+                data: JSON.stringify(electionData), // Serialize the data object into JSON
+                success: function (response) {
+                    // Parse and use the response
+                    let status = response.status;
+                    let message = response.message;
+                    let data = response.dt;
+                    if (status == "Success") {
+
+                        swal({
+                            title: "success!",
+                            text: "Your password has been sent to your registered mobile number. ",
+                            icon: "success",
+                            timer: 10000,
+                        });
+                        fngetnewcode();
+                        Clear();
+
+                    }
+                    else {
+                        swal({
+                            title: "OOps!",
+                            text: message,
+                            icon: "error",
+                            timer: 10000,
+                        });
+                        //alert(message);
+                    }
+                },
+                error: function (xhr, status, error) {
+                    // Handle errors here
+                    console.error("Error: " + error);
+                    alert("An error occurred: " + error);
+                }
+            });
+        }
+        else {
+            swal({
+                title: "Required!",
+                text: vali,
+                icon: "error",
+                timer: 10000,
+            });
+        }
+    }
+</script>

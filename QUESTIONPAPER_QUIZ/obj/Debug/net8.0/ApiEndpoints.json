@@ -1,0 +1,66 @@
+[
+  {
+    "ContainingType": "Dezigncompany.Controllers.ApiServicesController",
+    "Method": "ALLDATA",
+    "RelativePath": "api/ApiServices/ALLDATA",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "election",
+        "Type": "QUESTIONPAPER_QUIZ.Models.DelhiElection",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dezigncompany.Controllers.ApiServicesController",
+    "Method": "ApiAll",
+    "RelativePath": "api/ApiServices/ApiAll",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dezigncompany.Controllers.ApiServicesController",
+    "Method": "GetDate",
+    "RelativePath": "api/ApiServices/GetDate",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "election",
+        "Type": "QUESTIONPAPER_QUIZ.Models.DelhiElection",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Dezigncompany.Controllers.ApiServicesController",
+    "Method": "QuizApi",
+    "RelativePath": "api/ApiServices/QuizApi",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "jsonData",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

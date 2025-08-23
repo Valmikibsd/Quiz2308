@@ -1,0 +1,481 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\QUESTIONPAPER_QUIZ.bundle.scp.css",
+      "PackagePath": "staticwebassets\\QUESTIONPAPER_QUIZ.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\.gitattributes",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\.gitattributes"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\.gitignore",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\.gitignore"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\README.md",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\README.md"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\base64binary.js",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\base64binary.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\heroes.jpg",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\heroes.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\index.html",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\index.html"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\script.js",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\script.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\heroesgenerator-master\\style.css",
+      "PackagePath": "staticwebassets\\heroesgenerator-master\\style.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\1st.jpg",
+      "PackagePath": "staticwebassets\\images\\1st.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\2nd.jpg",
+      "PackagePath": "staticwebassets\\images\\2nd.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\3rd.jpg",
+      "PackagePath": "staticwebassets\\images\\3rd.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\Certificate.jpg",
+      "PackagePath": "staticwebassets\\images\\Certificate.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\IndiastatTourism.svg",
+      "PackagePath": "staticwebassets\\images\\IndiastatTourism.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\Jagran-logo.svg",
+      "PackagePath": "staticwebassets\\images\\Jagran-logo.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\TN-Map.jpg",
+      "PackagePath": "staticwebassets\\images\\TN-Map.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\TN-Map_old.jpg",
+      "PackagePath": "staticwebassets\\images\\TN-Map_old.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\Thiru.-R.-Rajendran.jpg",
+      "PackagePath": "staticwebassets\\images\\Thiru.-R.-Rajendran.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\Trip-to-Tamil-Nadu.jpg",
+      "PackagePath": "staticwebassets\\images\\Trip-to-Tamil-Nadu.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\Trip-to-Tamil-Nadu.png",
+      "PackagePath": "staticwebassets\\images\\Trip-to-Tamil-Nadu.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\adani-logo.svg",
+      "PackagePath": "staticwebassets\\images\\adani-logo.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\bigloader1.GIF",
+      "PackagePath": "staticwebassets\\images\\bigloader1.GIF"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\captcha.gif",
+      "PackagePath": "staticwebassets\\images\\captcha.gif"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\certificate.svg",
+      "PackagePath": "staticwebassets\\images\\certificate.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\change_code.png",
+      "PackagePath": "staticwebassets\\images\\change_code.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\download-button.svg",
+      "PackagePath": "staticwebassets\\images\\download-button.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\indiastatquiz-logo.svg",
+      "PackagePath": "staticwebassets\\images\\indiastatquiz-logo.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\jagran-header.png",
+      "PackagePath": "staticwebassets\\images\\jagran-header.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\jagran.png",
+      "PackagePath": "staticwebassets\\images\\jagran.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\map.png",
+      "PackagePath": "staticwebassets\\images\\map.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\movie.mp4",
+      "PackagePath": "staticwebassets\\images\\movie.mp4"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\print.svg",
+      "PackagePath": "staticwebassets\\images\\print.svg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\questions\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\questions\\1.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\questions\\2.jpg",
+      "PackagePath": "staticwebassets\\images\\questions\\2.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\questions\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\questions\\3.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\questions\\4.jpg",
+      "PackagePath": "staticwebassets\\images\\questions\\4.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\questions\\5.jpg",
+      "PackagePath": "staticwebassets\\images\\questions\\5.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-1.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-1.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-10.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-10.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-2.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-2.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-3.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-3.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-4.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-4.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-5.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-5.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-6.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-6.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-7.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-7.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\sponsors-logo\\dummy-9.png",
+      "PackagePath": "staticwebassets\\images\\sponsors-logo\\dummy-9.png"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\tamilnadu-bg-1.jpg",
+      "PackagePath": "staticwebassets\\images\\tamilnadu-bg-1.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\images\\tamilnadu-bg.jpg",
+      "PackagePath": "staticwebassets\\images\\tamilnadu-bg.jpg"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\REStartExam.js",
+      "PackagePath": "staticwebassets\\js\\REStartExam.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\StartExam.js",
+      "PackagePath": "staticwebassets\\js\\StartExam.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\main.js",
+      "PackagePath": "staticwebassets\\js\\main.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\js\\table2excel.js",
+      "PackagePath": "staticwebassets\\js\\table2excel.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "D:\\ajay sir\\quiznew\\NEW MODULE EXAM\\QUESTIONPAPER_QUIZ\\QUESTIONPAPER_QUIZ\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.QUESTIONPAPER_QUIZ.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.QUESTIONPAPER_QUIZ.props",
+      "PackagePath": "build\\QUESTIONPAPER_QUIZ.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.QUESTIONPAPER_QUIZ.props",
+      "PackagePath": "buildMultiTargeting\\QUESTIONPAPER_QUIZ.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.QUESTIONPAPER_QUIZ.props",
+      "PackagePath": "buildTransitive\\QUESTIONPAPER_QUIZ.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

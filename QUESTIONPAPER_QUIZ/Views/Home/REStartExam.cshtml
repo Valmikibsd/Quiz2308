@@ -1,0 +1,371 @@
+﻿@{
+    ViewData["Title"] = "StartExam";
+}
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <!--<link rel="icon" href="~/images/favicon.png" type="image/x-icon" />-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="apple-touch-fullscreen" content="YES" />
+    <title>Dainik Jagran  Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,600,600i,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/~/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/css/style.css" type="text/css">
+
+    <script src="~/js/jquery-3.4.1.min.js" type="text/javascript"></script>
+
+    @* <script type="text/javascript" src="~/js/main.js"></script> *@
+
+
+    <style type="text/css">
+        /* .close {
+                                font: normal 12px arial;
+                                color: Red;
+                                text-decoration: none;
+                                }
+
+                                .offsec {
+                                -webkit-user-select: none;
+                                -khtml-user-select: none;
+                                -moz-user-select: none;
+                                -ms-user-select: none;
+                                -o-user-select: none;
+                                user-select: none;
+                                }
+
+                                #divQStatus {
+                                width: 270px;
+                                float: left;
+                                background-color: #fff;
+                                padding: 20px;
+                                }
+
+                                #divQStatus p {
+                                padding: 3px;
+                                border-radius: 50%;
+                                height: 20px;
+                                width: 20px;
+                                float: left;
+                                margin: 0px 5px 3px 0px;
+                                text-align: center;
+                                font-family: Tmatter;
+                                font-size: 12px;
+                                font-weight: bold;
+                                } */
+
+        #divQStatus .qleft {
+            background-color: #f1f1f1;
+            border: thin solid #c6c6c6;
+            color: #000;
+            cursor: pointer;
+            padding-top: 0px;
+        }
+
+        #divQStatus .qattempt {
+            background-color: #8df581;
+            border: thin solid #158e07;
+            color: #0a3804;
+            cursor: pointer;
+        }
+
+        ol {
+            list-style: none;
+        }
+
+        body {
+            user-select: none;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+        /* .passageEnglish {
+                                float: left;
+                                width: 49%;
+                                margin-left: 4px;
+                                }
+
+                                .passageEnglish p {
+                                font-weight: bold;
+                                margin: 0px;
+                                }
+
+                                .passageHindi {
+                                float: right;
+                                width: 49%;
+                                }
+
+                                .passageHindi p {
+                                font-weight: bold;
+                                margin: 0px;
+                                }
+
+                                .btnNext {
+                                float: right;
+                                background: #063b6d;
+                                padding: 3px;
+                                margin-right: 8px;
+                                margin-bottom: 3px;
+                                }
+
+                                .btnPrev {
+                                float: left;
+                                background: #063b6d;
+                                padding: 3px;
+                                margin-bottom: 3px;
+                                margin-top: 20px;
+                                margin-left: 9px;
+                                }
+
+                                .msg_container {
+                                width: 350px;
+                                height: 600px;
+                                top: 20%;
+                                left: 35%;
+                                position: fixed;
+                                z-index: 1004;
+                                }
+
+                                .thanks {
+                                display: block;
+                                height: auto;
+                                margin-top: 63px;
+                                width: 350px;
+                                padding: 7px;
+                                background-color: #005195;
+                                border-radius: 10px;
+                                box-shadow: 2px 2px 50px 2px #333;
+                                }
+
+                                .msg {
+                                background-color: #e0f0f8;
+                                border: thin solid #005195;
+                                border-radius: 10px;
+                                font: normal 15px arial;
+                                text-align: center;
+                                padding: 10px;
+                                line-height: 22px;
+                                }
+
+                                .msg span {
+                                font: bold 30px arial;
+                                color: #005195;
+                                text-shadow: 1px 1px 3px #fff;
+                                }
+                                /*#pSet {text-transform:capitalize;text-align:center;margin:0px;clear: both;font-weight: bold;font-size: 17px;font-family: tmatter;width: 70px;margin-left: auto;margin-right: auto;background-color: #19478c;color: #fff;border-radius: 5px;padding-top: 2px;padding-bottom: 2px;   }*/
+
+        /*#middle_new {
+                                float: left;
+                                width: 70%;
+                                background: none;
+                                text-align: center;
+                                line-height: 30px;
+                                margin: 0px 0px 0px 3%;
+                                border-left: 0px dotted #ccc;
+                                border-right: 0px dotted #ccc;
+                                -moz-transition: all 0.5s;
+                                -ms-transition: all 0.5s;
+                                -o-transition: all 0.5s;
+                                transition: all 0.5s;
+                                } */
+    </style>
+</head>
+
+<body oncontextmenu='return false;' ondragstart="return false" onselectstart="return false" class="offsec">
+
+    <header id="headerhtml">
+        <!--<div class="dummy">Dummy</div>-->
+        <a href="/">
+        <div class="top_logo_cont">
+            <div class="logo" style="max-width: 250px">
+
+                <img src="/images/Jagran-logo.svg">
+
+
+            </div>
+           
+                <div class="logo" style="padding: 0px;"><img src="/images/adani-logo.svg"></div>
+           
+            <div class="indi-quiz" style="padding: 10px 0px 0px 0px;"><img src="/images/indiastatquiz-logo.svg"></div>
+        </div>
+        </a>
+        <div class="presents">प्रस्तुत करते हैं</div>
+        <div class="occasion" style="margin-top: 0px;">गोस्वामी तुलसीदास जयंती</div>
+        <div class="presents">31 जुलाई 2025 के अवसर पर</div>
+
+ 
+
+
+    </header>
+    
+    <div class="overlay"></div>
+    <!-- overlay start -->
+    <div class="lang-box">
+        <div class="popup-close">X</div>
+        <div class="pop_head">Please Select Language for Online Quiz</div>
+        <div class="lang-select">
+            <select id="dynamic_select" onchange="fnGetQuestions()">
+                <option value="0">Select Language</option>
+                @if (ViewBag.BindLanguage != null)
+                {
+                    foreach (var item in ViewBag.BindLanguage as List<SelectListItem>)
+                    {
+                        <option value="@item.Value">@item.Text</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+    <div class="coverlay"></div>
+    <div class="capt">
+        <div style="display:none;" class="cpopup-close">X</div>
+        @* <div class="pop_head">Please Select Language for Online Quiz</div> *@
+        <div class="lang-select">
+            <div class="clr" style="margin-bottom:30px;">
+                <div class="left"><label for="code">Type the code shown</label><span class="errors">*</span></div>
+                <div class="right">
+                    <input runat="server" name="txtContCode" type="text" id="txtContCode" style="width:150px; display:inline-block;">
+                    <span style="display:inline-block; margin-right:10px; margin-top:10px;"><img id="imgcaptcha" style="height:35px;"></span>
+                    <span class="code"><a href="javascript:void(0)" style="margin:4px 0px 0px 0px; padding:0px 0px 5px 10px;" onclick="javascript:return fngetnewcode();">Change Code</a></span>
+                </div>
+            </div>
+            <div class="l-box-right">
+                <div style="float:right; padding:15px 5px 0;clear:both;">
+                    <div id="divloading" style="display:none;height:30px;width:30px;margin-right:7px;"> <img src="/images/bigloader1.GIF" style="height:30px;width:30px;" /></div><div style="display:inline-block; margin-bottom:10px;"> <input type="button" id="btnSubmit" value="Submit" /></div><br>@* <div class="forgot-pass"><a href="/home/forgotForgot">Forgot Password?</a></div> *@
+                    @*  @ViewBag.host12 *@
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="divmainloading" style="height: 50px; width: 50px; display: none; top: 50%; left: 38%; margin-top: -25px; margin-right: -25px; position: fixed;">
+        <img src="/images/bigloader1.GIF" />
+    </div>
+
+    <a id="home"></a>
+    <input type="hidden" id="hdfActiveQSheet" value="1" />
+    <input type="hidden" id="hdfTotalNoOfQ" />
+    <input type="hidden" id="hdfUserId" value="@ViewBag.uid" />
+    <input type="hidden" id="hdfExamId" value="@ViewBag.ExamId" />
+    <input type="hidden" id="hdfcapt" value="0" />
+    <input type="hidden" id="hidexamtime" value="0" />
+    <input type="hidden" id="ltimess" />
+    <div class="body_middle">
+        <div class="wrapper">
+            <div class="mock_cont" style="margin: 0px 0px 30px 0px">
+
+                <!-- Mock Pic start -->
+                <div class="mock-q-attempt">
+                    <div class="q-selector" id="divQStatus">
+                      
+                    </div>
+                </div>
+                <!-- Mock Pic End -->
+                <!-- Mock Questions start -->
+                <div class="mock-question-cont">
+
+                    <div class="head-cont">
+                        <div class="q-head" id="divTotalNoOfQ"></div>
+                        <div class="q-head" style="display:none" id="welcomeuser">Welcome! @ViewBag.uname</div>
+                        <div class="q-head" id="timerhtml">
+                            @* <div id="countdown">
+                                <div id="timer"></div>
+                                <svg>
+                                    <circle r="18" cx="20" cy="20"></circle>
+                                </svg>
+                            </div> *@
+                        </div>
+                    </div>
+                    <div class="mock-question" id="divQuestionsAnsSheet">
+                     
+
+                    </div>
+                    <div class="popup">
+                        <div class="pop_head">Thank you for participating in Tamil Nadu Travel Mock Quiz - 2025</div>
+                        <div class="score">Your score <span class="totalattemt">5</span> out of <span class="totalquestion">10</span></div>
+                        <p>Hope you like this quiz.</p>
+
+                        <div class="mock-btn" style="margin-top: 20px;"><a href="javascript:void(0)" onclick="TryOneMoreTime()">Try one more time</a></div>
+
+                    </div>
+
+
+                </div>
+                <!-- Mock Questions End -->
+
+
+
+
+
+            </div>
+        </div>
+
+
+
+
+     @*    <div class="quiz-cont" style="background: #f1f1f1;">
+            <div class="wrapper" id="footerhtml">
+                <!-- logo-cont start -->
+                <div class="partner-cont">
+
+
+                    <!-- 2 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Quiz Partner</div>
+                        <div class="part-img"><a href="https://www.indiastatquiz.com/" target="_blank"><img src="~/images/indiastatquiz-logo.svg"></a></div>
+                    </div>
+                    <!-- 2 box end -->
+                    <!-- 2 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Hospitality Partner</div>
+                        <div class="part-img-squr"><a href="#" target="_blank"><img src="~/images/sponsors-logo/dummy-10.png"></a></div>
+                    </div>
+                    <!-- 2 box end -->
+                    <!-- 3 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Travel Partner</div>
+                        <div class="part-img-squr"><a href="#" target="_blank"><img src="~/images/sponsors-logo/dummy-2.png"></a></div>
+                    </div>
+                    <!-- 3 box end -->
+                    <!-- 3 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Award Partner</div>
+                        <div class="part-img-squr"><a href="#" target="_blank"><img src="~/images/sponsors-logo/dummy-3.png"></a></div>
+                    </div>
+                    <!-- 3 box end -->
+                    <!-- 3 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Cuisine Partner</div>
+                        <div class="part-img-squr"><a href="#" target="_blank"><img src="~/images/sponsors-logo/dummy-4.png"></a></div>
+                    </div>
+                    <!-- 3 box end -->
+                    <!-- 4 box start -->
+                    <div class="bott-logo-cont">
+                        <div class="bott-logo-title">Event Partner</div>
+                        <div class="part-img-squr"><a href="#" target="_blank"><img src="~/images/sponsors-logo/dummy-6.png"></a></div>
+                    </div>
+                    <!-- 4 box end -->
+
+                </div>
+
+                @* @Html.Raw(ViewBag.Footer) *@
+
+                <!-- logo-cont end -->
+
+
+            @* </div>
+        </div> *@ 
+
+        <div class="bottom-stripe"><a href="http://www.indiastatinitiatives.com/" target="_blank">&copy; Datanet India</a></div>
+        <!-- End middle body -->
+    </div>
+
+</body>
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+<script type="text/javascript" src="~/js/REStartExam.js"></script>

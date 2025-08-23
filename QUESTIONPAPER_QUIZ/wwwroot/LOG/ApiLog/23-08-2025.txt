@@ -1,0 +1,29 @@
+23/08/2025 09:40:02 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:08 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getrequestions"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:10 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1131,"optid":1,"rightans":"सुमंत्र","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:11 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1142,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:13 - input'SP_QuizApi N'{"rzs":2,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1142,"optid":4,"rightans":"प्रयाग","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:14 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1153,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:15 - input'SP_QuizApi N'{"rzs":3,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1153,"optid":2,"rightans":"वृद्ध, रोगी, मूर्ख, निर्धन, अंधा, बहरा, क्रोधी और अत्यन्त ही दीन","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:16 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1162,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:17 - input'SP_QuizApi N'{"rzs":4,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1162,"optid":2,"rightans":"डेरा डाला","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:32 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1195,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:38 - input'SP_QuizApi N'{"rzs":5,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1195,"optid":2,"rightans":"उसने सारे दिक्पालों को जीत लिया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:39 - input'SP_QuizApi N'{"rzs":5,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1195,"optid":2,"rightans":"उसने सारे दिक्पालों को जीत लिया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:51 - input'SP_QuizApi N'{"rzs":5,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1195,"optid":4,"rightans":"उसने सारे दिक्पालों को जीत लिया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:40:58 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1199,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:12 - input'SP_QuizApi N'{"rzs":6,"gzs":1,"uid":"ajaysainim@gmail.com","qnsid":1199,"optid":3,"rightans":"कोमल वाणी से","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1204,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:28 - input'SP_QuizApi N'{"rzs":7,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1204,"optid":3,"rightans":"तुझे यह मूर्खता किसने सिखाई","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:29 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1210,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:45 - input'SP_QuizApi N'{"rzs":8,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1210,"optid":2,"rightans":"स्वयं हनुमान जी ने","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:46 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1217,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:50 - input'SP_QuizApi N'{"rzs":8,"gzs":3,"uid":"ajaysainim@gmail.com","type":"submitreans"}'' -  -  -  -  -  - Fill
+23/08/2025 09:41:52 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 09:49:06 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 09:49:27 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 09:49:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 09:50:25 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 11:33:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 11:38:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 12:48:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
