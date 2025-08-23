@@ -27,3 +27,110 @@
 23/08/2025 11:33:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
 23/08/2025 11:38:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
 23/08/2025 12:48:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 14:28:18 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 14:55:08 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 14:55:11 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":2,"rightans":"मेघनाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:55:11 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:42 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:52 - input'SP_QuizApi N'{"rzs":1,"gzs":1,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":3,"rightans":"मेघनाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:52 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:55 - input'SP_QuizApi N'{"rzs":2,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":3,"rightans":"परशुराम और श्रीरामजी का संवाद स्वयंवर के बाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:56 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:58 - input'SP_QuizApi N'{"rzs":3,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":3,"rightans":"दुष्ट स्वभाव वालों के लिए","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:58:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:34 - input'SP_QuizApi N'{"rzs":4,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1678,"optid":3,"rightans":"मारीच","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1680,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:36 - input'SP_QuizApi N'{"rzs":5,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1680,"optid":3,"rightans":"सेतुबंध स्थल पर","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1682,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:46 - input'SP_QuizApi N'{"rzs":6,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1682,"optid":3,"rightans":"वशिष्ठजी","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:47 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1683,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:49 - input'SP_QuizApi N'{"rzs":7,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1683,"optid":2,"rightans":"उत्तरकांड","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:58 - input'SP_QuizApi N'{"rzs":7,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1683,"optid":3,"rightans":"उत्तरकांड","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 14:59:59 - input'SP_QuizApi N'{"rzs":7,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1683,"optid":2,"rightans":"उत्तरकांड","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:00:00 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1684,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:00:10 - input'SP_QuizApi N'{"rzs":8,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1684,"optid":2,"rightans":"गोदावरी","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:00:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1685,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:00:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:02:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:02:30 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1676,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:02:32 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:02:33 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:04:51 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:12:47 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:13:51 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:15 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:17 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1680,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:18 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1681,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:30 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1683,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:33 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1684,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:15:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1685,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:05 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:28 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:32 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:35 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":1,"rightans":"परशुराम और श्रीरामजी का संवाद स्वयंवर के बाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:38 - input'SP_QuizApi N'{"rzs":2,"gzs":1,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":3,"rightans":"दुष्ट स्वभाव वालों के लिए","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:38 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:21:47 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:21 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:28 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":2,"rightans":"मेघनाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:28 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:30 - input'SP_QuizApi N'{"rzs":2,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":1,"rightans":"परशुराम और श्रीरामजी का संवाद स्वयंवर के बाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:31 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:33 - input'SP_QuizApi N'{"rzs":3,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":4,"rightans":"दुष्ट स्वभाव वालों के लिए","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:23:34 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:26:58 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:40 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:43 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":2,"rightans":"मेघनाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:50 - input'SP_QuizApi N'{"rzs":2,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":4,"rightans":"परशुराम और श्रीरामजी का संवाद स्वयंवर के बाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:51 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1676,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:54 - input'SP_QuizApi N'{"rzs":3,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1676,"optid":1,"rightans":"उसने श्रीरामजी को पहचान लिया था","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:54 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:57 - input'SP_QuizApi N'{"rzs":4,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":2,"rightans":"दुष्ट स्वभाव वालों के लिए","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:28:58 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:29:46 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1680,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:29:49 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1682,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:29:50 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1683,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:41 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":4,"rightans":"परशुराम और श्रीरामजी का संवाद स्वयंवर के बाद","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:42 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1676,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:44 - input'SP_QuizApi N'{"rzs":2,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1676,"optid":4,"rightans":"उसने श्रीरामजी को पहचान लिया था","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:46 - input'SP_QuizApi N'{"rzs":3,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":4,"rightans":"दुष्ट स्वभाव वालों के लिए","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:47 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1678,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:51 - input'SP_QuizApi N'{"rzs":4,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1678,"optid":3,"rightans":"मारीच","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:52 - input'SP_QuizApi N'{"rzs":4,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1678,"optid":2,"rightans":"मारीच","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:33:54 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1680,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:34:52 - input'SP_QuizApi N'{"rzs":5,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1680,"optid":1,"rightans":"सेतुबंध स्थल पर","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:01 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1681,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:06 - input'SP_QuizApi N'{"rzs":6,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1681,"optid":2,"rightans":"अपने रामदूत होने का","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:07 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1682,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:09 - input'SP_QuizApi N'{"rzs":7,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1682,"optid":1,"rightans":"वशिष्ठजी","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:10 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1684,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:12 - input'SP_QuizApi N'{"rzs":8,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1684,"optid":2,"rightans":"गोदावरी","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1685,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:32 - input'SP_QuizApi N'{"rzs":9,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1685,"optid":1,"rightans":"अहल्या","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:33 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1686,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:35:51 - input'SP_QuizApi N'{"rzs":10,"gzs":1,"uid":"ajaysainim@gmail.com","qnsid":1686,"optid":3,"rightans":"बाली को","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:02 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1687,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:08 - input'SP_QuizApi N'{"rzs":11,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1687,"optid":3,"rightans":"समुद्र/नभ में","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:10 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1688,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:19 - input'SP_QuizApi N'{"rzs":12,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1688,"optid":3,"rightans":"जामवंत जी","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:20 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1689,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:59 - input'SP_QuizApi N'{"rzs":13,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1689,"optid":2,"rightans":"सुग्रीव","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:36:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1693,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:37:10 - input'SP_QuizApi N'{"rzs":14,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1693,"optid":4,"rightans":"भौंरा","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:37:11 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1694,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:37:49 - input'SP_QuizApi N'{"rzs":15,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1694,"optid":4,"rightans":"लंकाकांड","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:00 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1695,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:11 - input'SP_QuizApi N'{"rzs":16,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1695,"optid":1,"rightans":"गलत","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1696,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:18 - input'SP_QuizApi N'{"rzs":17,"gzs":6,"uid":"ajaysainim@gmail.com","qnsid":1696,"optid":2,"rightans":"गलत","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1697,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:25 - input'SP_QuizApi N'{"rzs":18,"gzs":6,"uid":"ajaysainim@gmail.com","qnsid":1697,"optid":2,"rightans":"सही","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:25 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1698,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:36 - input'SP_QuizApi N'{"rzs":19,"gzs":7,"uid":"ajaysainim@gmail.com","qnsid":1698,"optid":2,"rightans":"गलत","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:36 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1699,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:42 - input'SP_QuizApi N'{"rzs":19,"gzs":7,"uid":"ajaysainim@gmail.com","type":"submitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:38:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill

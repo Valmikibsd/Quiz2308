@@ -694,14 +694,46 @@ function fnBackNext(sId, fId, totalnoofq, queid) {
             updateQuestiontime(queid);
             $('#hdfActiveQSheet').val((sId + 1));
             $('#divTotalNoOfQ').html("Total Questions : " + (sId + 1) + "/" + document.getElementById('hdfTotalNoOfQ').value);
-        document.getElementById('divq' + (sId + 1)).style.display = 'block';
+            var qel = document.getElementById('divq' + (sId + 1));
+            document.getElementById('divq' + (sId + 1)).style.display = 'block';
+            let video = $("#divq" + (sId + 1))
+                .find(".mock-q-pic")
+                .find("video")
+                .removeAttr("muted")
+                .get(0); // Get raw DOM video element
+
+            if (video) {
+                video.muted = false; // Ensure sound is on
+                video.play().catch(function (err) {
+                    console.log("Autoplay blocked by browser:", err);
+                });
+            }
         if (sId > 1) {
             for (var i = 0; i < sId; i++) {
+
                 document.getElementById('divq' + (i + 1)).style.display = 'none';
+
+                let video = $("#divq" + (i + 1))
+                    .find(".mock-q-pic")
+                    .find("video")
+                    .get(0);
+
+                if (video) {
+                    video.muted = true; // mute video
+                }
             }
         }
         else {
             document.getElementById('divq' + fId).style.display = 'none';
+
+            let video = $("#divq" + fId)
+                .find(".mock-q-pic")
+                .find("video")
+                .get(0);
+
+            if (video) {
+                video.muted = true; // mute video
+            }
         }
         nextqnsauto = sId;
         if (totalnoofques == nextqnsauto + 1) {
