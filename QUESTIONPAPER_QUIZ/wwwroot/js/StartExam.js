@@ -694,7 +694,7 @@ function fnBackNext(sId, fId, totalnoofq, queid) {
             updateQuestiontime(queid);
             $('#hdfActiveQSheet').val((sId + 1));
             $('#divTotalNoOfQ').html("Total Questions : " + (sId + 1) + "/" + document.getElementById('hdfTotalNoOfQ').value);
-            var qel = document.getElementById('divq' + (sId + 1));
+           
             document.getElementById('divq' + (sId + 1)).style.display = 'block';
             let video = $("#divq" + (sId + 1))
                 .find(".mock-q-pic")

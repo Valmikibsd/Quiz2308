@@ -134,3 +134,4 @@
 23/08/2025 15:38:36 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1699,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
 23/08/2025 15:38:42 - input'SP_QuizApi N'{"rzs":19,"gzs":7,"uid":"ajaysainim@gmail.com","type":"submitans"}'' -  -  -  -  -  - Fill
 23/08/2025 15:38:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:47:31 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
