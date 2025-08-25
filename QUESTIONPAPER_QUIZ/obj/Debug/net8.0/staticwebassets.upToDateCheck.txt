@@ -53,6 +53,7 @@ wwwroot\js\jquery-3.4.1.min.js
 wwwroot\js\main.js
 wwwroot\js\REStartExam.js
 wwwroot\js\site.js
+wwwroot\js\StartExam.js
 wwwroot\js\table2excel.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map
@@ -114,7 +115,8 @@ wwwroot\lib\jquery\LICENSE.txt
 wwwroot\LOG\ApiLog\20-08-2025.txt
 wwwroot\LOG\ApiLog\21-08-2025.txt
 wwwroot\LOG\ApiLog\22-08-2025.txt
+wwwroot\LOG\ApiLog\23-08-2025.txt
 wwwroot\LOG\ErrorLog\20-08-2025.txt
 wwwroot\LOG\ErrorLog\21-08-2025.txt
-wwwroot\js\StartExam.js
-wwwroot\LOG\ApiLog\23-08-2025.txt
+wwwroot\LOG\ErrorLog\25-08-2025.txt
+wwwroot\LOG\ApiLog\25-08-2025.txt

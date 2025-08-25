@@ -645,8 +645,9 @@ function fnBackNext(sId, fId, totalnoofq, queid) {
 
         //setCookie("countqno", countqno, 1);
         let captchaflag = parseInt($("#hdfcapt").val());
+        let captchatime = parseInt($("#hidcapttime").val());
 
-        if (countqno == 6 && captchaflag == 1) {
+        if (countqno == captchatime && captchaflag == 1) {
             //clearInterval(time_out);
             $('.coverlay').css('display', 'block');
             $('.capt').css('display', 'block');

@@ -135,3 +135,57 @@
 23/08/2025 15:38:42 - input'SP_QuizApi N'{"rzs":19,"gzs":7,"uid":"ajaysainim@gmail.com","type":"submitans"}'' -  -  -  -  -  - Fill
 23/08/2025 15:38:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
 23/08/2025 15:47:31 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:32 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getrequestions"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:35 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1138,"optid":1,"rightans":"सरासन बान","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:36 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1143,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:38 - input'SP_QuizApi N'{"rzs":2,"gzs":1,"uid":"ajaysainim@gmail.com","qnsid":1143,"optid":3,"rightans":"सायुज्य मुक्ति","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:39 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1165,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:41 - input'SP_QuizApi N'{"rzs":3,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1165,"optid":3,"rightans":"संत","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:41 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1176,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:43 - input'SP_QuizApi N'{"rzs":4,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1176,"optid":1,"rightans":"ओले","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1181,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:46 - input'SP_QuizApi N'{"rzs":5,"gzs":2,"uid":"ajaysainim@gmail.com","qnsid":1181,"optid":4,"rightans":"श्रीराम के क्रोध में राक्षसों के समस्त कुल का विनाश निश्चित है","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:54 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1193,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:56 - input'SP_QuizApi N'{"rzs":6,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1193,"optid":2,"rightans":"पृथ्वी का भार उतारने के लिए","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:57 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1232,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:51:59 - input'SP_QuizApi N'{"rzs":7,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1232,"optid":4,"rightans":"श्रीराम की शरण में जाने की सलाह देकर","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:00 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1235,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:01 - input'SP_QuizApi N'{"rzs":8,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1235,"optid":2,"rightans":"कटाक्ष और सच्चाई से","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:02 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1247,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:04 - input'SP_QuizApi N'{"rzs":9,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1247,"optid":4,"rightans":"जो उत्तम को छोड़कर नीच का सेवन करते हैं।","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:04 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1251,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:06 - input'SP_QuizApi N'{"rzs":10,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1251,"optid":3,"rightans":"जाम्बवान् ने कहा कि अब वह बूढ़ा हो गया है, और पहले जैसा बल नहीं है।","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:14 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1273,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:16 - input'SP_QuizApi N'{"rzs":11,"gzs":3,"uid":"ajaysainim@gmail.com","qnsid":1273,"optid":1,"rightans":"उस व्यक्ति के लिए, जो माता-पिता को प्रिय रखे","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:17 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1281,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:18 - input'SP_QuizApi N'{"rzs":12,"gzs":4,"uid":"ajaysainim@gmail.com","qnsid":1281,"optid":3,"rightans":"मातृ-पितृ भक्ति","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1297,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:21 - input'SP_QuizApi N'{"rzs":13,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1297,"optid":2,"rightans":"वन राक्षसों और हिंसक पशुओं से भरा हुआ है","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:22 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1311,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:23 - input'SP_QuizApi N'{"rzs":14,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1311,"optid":2,"rightans":"आवा","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:24 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1318,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:25 - input'SP_QuizApi N'{"rzs":15,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1318,"optid":4,"rightans":"बोले समउ समुझि मन माहीं","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1332,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:37 - input'SP_QuizApi N'{"rzs":16,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1332,"optid":2,"rightans":"विधाता ने सुख छीन लिए क्योंकि पुण्य समाप्त हो गया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:37 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1342,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:39 - input'SP_QuizApi N'{"rzs":17,"gzs":5,"uid":"ajaysainim@gmail.com","qnsid":1342,"optid":3,"rightans":"तब लगि मोहि परिखेहु तुम्ह भाई","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:40 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1347,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:41 - input'SP_QuizApi N'{"rzs":18,"gzs":6,"uid":"ajaysainim@gmail.com","qnsid":1347,"optid":2,"rightans":"श्री राम आज्ञा और आशीर्वाद माँग रहे हैं","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:42 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1349,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:44 - input'SP_QuizApi N'{"rzs":19,"gzs":7,"uid":"ajaysainim@gmail.com","qnsid":1349,"optid":2,"rightans":"भगवान का विधान विचित्र है","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:45 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1355,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:46 - input'SP_QuizApi N'{"rzs":20,"gzs":7,"uid":"ajaysainim@gmail.com","qnsid":1355,"optid":3,"rightans":"लोग रथ खोजते हुए चारों ओर दौड़ने लगे","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:54 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1365,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:56 - input'SP_QuizApi N'{"rzs":21,"gzs":8,"uid":"ajaysainim@gmail.com","qnsid":1365,"optid":2,"rightans":"अनुसूया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:57 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1370,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:52:59 - input'SP_QuizApi N'{"rzs":22,"gzs":9,"uid":"ajaysainim@gmail.com","qnsid":1370,"optid":3,"rightans":"सुतीक्ष्ण","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:00 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1374,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:02 - input'SP_QuizApi N'{"rzs":23,"gzs":9,"uid":"ajaysainim@gmail.com","qnsid":1374,"optid":4,"rightans":"रावण बहुत दुखी होकर कुंभकर्ण को जगाने गया","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:02 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1378,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:04 - input'SP_QuizApi N'{"rzs":24,"gzs":9,"uid":"ajaysainim@gmail.com","qnsid":1378,"optid":3,"rightans":"तुम बल-बुद्धि के निधान हो, रामकाज सफल करोगे","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:05 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1401,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:07 - input'SP_QuizApi N'{"rzs":25,"gzs":9,"uid":"ajaysainim@gmail.com","qnsid":1401,"optid":1,"rightans":"धर्म का पालन करो","type":"optresubmitans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:15 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1406,"examid":"22","type":"updatereqnstime"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:19 - input'SP_QuizApi N'{"rzs":25,"gzs":9,"uid":"ajaysainim@gmail.com","type":"submitreans"}'' -  -  -  -  -  - Fill
+23/08/2025 15:53:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+23/08/2025 16:23:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill

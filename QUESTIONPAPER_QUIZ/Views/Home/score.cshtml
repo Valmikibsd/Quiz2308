@@ -247,17 +247,22 @@ var addHtml1 = "";
                 if (score == "NaN") {
                     score = 0;
                 }
-                //
+              
 
                 var totalQ1 = data[0].totalnoofq1;
                 var attempt1 = data[0].attemptq1;
                 var correct1 = data[0].correctans1;
+                var ReFlag = parseInt(data[0].ReFlag);
                 var incorrect1 = parseInt(attempt1) - parseInt(correct1);
                 var negative1 = incorrect1 * 0.33;
                 var score1 = Math.round(((parseInt(correct1) - negative1) / parseInt(totalQ1)) * 100, 2);
                 if (score1 == "NaN")
                 { 
                     score1 = 0;
+                }
+
+                  if(ReFlag==0){
+                    $("#trymores").hide();
                 }
 
                 $('#hdfTitle').val(data[0].title);

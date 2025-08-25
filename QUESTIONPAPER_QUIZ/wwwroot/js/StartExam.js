@@ -52,6 +52,7 @@ $("#btnSubmit").bind("click", function () {
         var examids = $("#hdfExamId").val();
         var langids = "19";
         var Captchas = $("#txtContCode").val();
+        $("#txtContCode").val('');
 
         document.getElementById('divloading').style.display = 'inline-block';
         $.ajax({
@@ -461,6 +462,7 @@ function fnGetQuestions() {
             var tableData = data.Data;
             $("#hdfcapt").val(tableData[0].CaptchaFlag);
             $("#hidexamtime").val(tableData[0].examtime);
+            $("#hidcapttime").val(tableData[0].CaptchaQno);
             $('.popup').css('display', 'none');
             $('.mock-question').css('display', 'block');
             if (tableData != null || tableData != undefined || tableData != '') {
@@ -676,8 +678,9 @@ function fnBackNext(sId, fId, totalnoofq, queid) {
        
         //setCookie("countqno", countqno, 1);
         let captchaflag = parseInt($("#hdfcapt").val());
+        let captchatime = parseInt($("#hidcapttime").val());
 
-        if (countqno == 6 && captchaflag==1) {
+        if (countqno == captchatime && captchaflag==1) {
             //clearInterval(time_out);
             $('.coverlay').css('display', 'block');
             $('.capt').css('display', 'block');
