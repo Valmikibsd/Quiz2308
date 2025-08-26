@@ -156,3 +156,7 @@
 25/08/2025 16:18:59 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1688,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
 25/08/2025 16:19:09 - input'SP_QuizApi N'{"rzs":8,"gzs":0,"uid":"ajaysainim@gmail.com","type":"submitans"}'' -  -  -  -  -  - Fill
 25/08/2025 16:19:09 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+25/08/2025 17:20:56 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+25/08/2025 17:54:50 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+25/08/2025 17:55:23 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+25/08/2025 17:58:42 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill

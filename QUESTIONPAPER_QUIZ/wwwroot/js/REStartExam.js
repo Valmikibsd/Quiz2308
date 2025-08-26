@@ -129,6 +129,8 @@ var time_out = 0;
 var nextqnsauto = 0;
 var nextcounterauto = 0;
 var totalnoofques = 0;
+
+/*
 function CountTime(time_limit, sId, fId, type) {
     if (capflg == 1) {
         return false;
@@ -204,7 +206,73 @@ function CountTime(time_limit, sId, fId, type) {
         }
     }, 1000);
 }
+*/
 
+function CountTime(time_limit, sId, fId, type) {
+    if (capflg == 1) return false;
+    if (parseInt($("#hidexamtime").val()) > 0) return false;
+    clearInterval(time_out);
+
+    const circle = document.querySelector("svg circle");
+
+    // Reset animation
+    circle.style.animation = "none";
+    void circle.offsetWidth;
+
+    // Circle properties
+    circle.setAttribute("stroke-dasharray", "113px");
+    circle.setAttribute("stroke-dashoffset", "5px");
+    circle.setAttribute("stroke-linecap", "round");
+    circle.setAttribute("stroke-width", "2px");
+    circle.setAttribute("stroke", "red");
+    circle.setAttribute("fill", "none");
+
+    // Remove old style
+    const oldStyle = document.getElementById("countdown-style");
+    if (oldStyle) oldStyle.remove();
+
+    // New animation style
+    const style = document.createElement("style");
+    style.id = "countdown-style";
+    style.textContent = `
+        @keyframes countdown {
+            from { stroke-dashoffset: 5px; }
+            to { stroke-dashoffset: 113px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Restart animation
+    setTimeout(() => {
+        circle.style.animation = `countdown ${time_limit}s linear forwards`;
+    }, 10);
+
+    // Set end time
+    let endTime = Date.now() + time_limit * 1000;
+
+    // Show full time immediately
+    $('#timer').html(time_limit);
+
+    // Timer logic
+    time_out = setInterval(() => {
+        let remaining = Math.ceil((endTime - Date.now()) / 1000);
+
+        if (remaining <= 0) {
+            $('#timer').html('0');
+            clearInterval(time_out);
+
+            if (nextcounterauto == "F") {
+                $('#btnendexam').click();
+            }
+            $('.nextqns_' + nextqnsauto + '').click();
+
+        } else {
+            $('#timer').html(remaining);
+        }
+    }, 1000);
+}
+
+/*
 function CountTimeE(time_limit, sId, fId, type) {
     if (capflg == 1) {
         return false;
@@ -273,7 +341,73 @@ function CountTimeE(time_limit, sId, fId, type) {
             remainingSeconds--;
         }
     }, 1000);
+}  */
+
+function CountTimeE(time_limit, sId, fId, type) {
+    if (capflg == 1) {
+        return false;
+    }
+    clearInterval(time_out);
+
+    // Convert minutes to seconds
+    let totalSeconds = Math.floor(time_limit * 60);
+
+    // Instead of decreasing each second, store the end time
+    let endTime = Date.now() + totalSeconds * 1000;
+
+    const circle = document.querySelector("svg circle");
+    const timeText = document.getElementById(fId);
+
+    // Reset previous animation
+    circle.style.animation = "none";
+    void circle.offsetWidth;
+
+    // Set circle properties
+    circle.setAttribute("stroke-dasharray", "113px");
+    circle.setAttribute("stroke-dashoffset", "5px");
+    circle.setAttribute("stroke-linecap", "round");
+    circle.setAttribute("stroke-width", "2px");
+    circle.setAttribute("stroke", "red");
+    circle.setAttribute("fill", "none");
+    circle.style.display = 'none';
+
+    // Remove old style
+    const oldStyle = document.getElementById("countdown-style");
+    if (oldStyle) oldStyle.remove();
+
+    // Add new style for animation
+    const style = document.createElement("style");
+    style.id = "countdown-style";
+    style.textContent = `
+        @keyframes countdown {
+            from { stroke-dashoffset: 5px; }
+            to { stroke-dashoffset: 113px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Restart animation
+    setTimeout(() => {
+        circle.style.animation = `countdown ${totalSeconds}s linear forwards`;
+    }, 10);
+
+    // Timer logic using real time difference
+    time_out = setInterval(() => {
+        let remaining = Math.floor((endTime - Date.now()) / 1000);
+
+        if (remaining <= 0) {
+            $('#timer').html("0:00");
+            clearInterval(time_out);
+            $('#btnendexam').click();
+        } else {
+            let minutes = Math.floor(remaining / 60);
+            let seconds = remaining % 60;
+            $('#timer').html(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
+        }
+    }, 1000);
 }
+
+
 
 // Encryption function
 function encryptData(data, key) {

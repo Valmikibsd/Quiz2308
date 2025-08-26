@@ -397,7 +397,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             }
             using (SqlConnection con = new SqlConnection(util.strElect))
             {
-                using (SqlCommand cmd = new SqlCommand("select  isnull(finalendexam,0)finalendexam,totalnoofq from tblSOE_Users WITH (NOLOCK) where userid='" + userid + "'", con))
+                using (SqlCommand cmd = new SqlCommand("select  isnull(finalendexam,0)finalendexam,isnull(totalnoofq,0)totalnoofq from tblSOE_Users WITH (NOLOCK) where userid='" + userid + "'", con))
                 {
                     try
                     {
@@ -419,7 +419,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
 
                                 return Redirect("/home/score/"+ExamId);
                             }
-                            return Redirect("/home/examlogin/" + ExamId);
+                           // return Redirect("/home/examlogin/" + ExamId);
                         }
                         else
                         {

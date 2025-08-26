@@ -86,13 +86,15 @@ $("#btnSubmit").bind("click", function () {
                     var sid = parseInt(getCookie("sId") || "0");
                     var fid = parseInt(getCookie("fId") || "0");
                     var totalnoofq = parseInt(getCookie("totalnoofq") || "0");
+                    var time_limit = parseInt(getCookie("time_limit") || "0");
                     var queid = parseInt(getCookie("queid") || "0"); 
                     fnBackNext(sid, fid, totalnoofq, queid);
-                    CountTime(45, sid, fid, 2);
+                    CountTime(time_limit, sid, fid, 2);
 
                     clearCookie("sId");
                     clearCookie("fId");
                     clearCookie("totalnoofq");
+                    clearCookie("time_limit");
                 }
 
 
@@ -133,6 +135,139 @@ var time_out = 0;
 var nextqnsauto = 0;
 var nextcounterauto = 0;
 var totalnoofques = 0;
+
+/*function CountTime(time_limit, sId, fId, type) {
+    if (capflg == 1) {
+        return false;
+    }
+    if (parseInt($("#hidexamtime").val()) > 0) {
+        return false;
+    }
+    clearInterval(time_out);
+
+    const circle = document.querySelector("svg circle");
+
+    // Remove any existing animation by resetting styles
+    circle.style.animation = "none";
+    void circle.offsetWidth; // Force reflow to restart animation
+
+    // Apply properties using setAttribute
+    circle.setAttribute("stroke-dasharray", "113px");
+    circle.setAttribute("stroke-dashoffset", "5px");
+    circle.setAttribute("stroke-linecap", "round");
+    circle.setAttribute("stroke-width", "2px");
+    circle.setAttribute("stroke", "red");
+    circle.setAttribute("fill", "none");
+
+    // Remove old <style> tag if exists
+    const oldStyle = document.getElementById("countdown-style");
+    if (oldStyle) oldStyle.remove();
+
+    // Create new <style> tag for animation
+    const style = document.createElement("style");
+    style.id = "countdown-style";
+    style.textContent = `
+        @keyframes countdown {
+            from { stroke-dashoffset: 5px; }
+            to { stroke-dashoffset: 113px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Restart animation after resetting
+    setTimeout(() => {
+        circle.style.animation = `countdown ${time_limit}s linear forwards`;
+    }, 10);
+
+    // Store actual end time
+    let endTime = Date.now() + time_limit * 1000;
+
+    // Timer countdown logic using real time difference
+    time_out = setInterval(() => {
+        let remaining = Math.floor((endTime - Date.now()) / 1000);
+
+        if (remaining <= 0) {
+            $('#timer').html('0');
+            clearInterval(time_out);
+
+            if (nextcounterauto == "F") {
+                $('#btnendexam').click();
+            }
+
+            $('.nextqns_' + nextqnsauto + '').click();
+
+        } else {
+            $('#timer').html(remaining);
+        }
+    }, 1000);
+}*/
+
+function CountTime(time_limit, sId, fId, type) {
+    if (capflg == 1) return false;
+    if (parseInt($("#hidexamtime").val()) > 0) return false;
+    clearInterval(time_out);
+
+    const circle = document.querySelector("svg circle");
+
+    // Reset animation
+    circle.style.animation = "none";
+    void circle.offsetWidth;
+
+    // Circle properties
+    circle.setAttribute("stroke-dasharray", "113px");
+    circle.setAttribute("stroke-dashoffset", "5px");
+    circle.setAttribute("stroke-linecap", "round");
+    circle.setAttribute("stroke-width", "2px");
+    circle.setAttribute("stroke", "red");
+    circle.setAttribute("fill", "none");
+
+    // Remove old style
+    const oldStyle = document.getElementById("countdown-style");
+    if (oldStyle) oldStyle.remove();
+
+    // New animation style
+    const style = document.createElement("style");
+    style.id = "countdown-style";
+    style.textContent = `
+        @keyframes countdown {
+            from { stroke-dashoffset: 5px; }
+            to { stroke-dashoffset: 113px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Restart animation
+    setTimeout(() => {
+        circle.style.animation = `countdown ${time_limit}s linear forwards`;
+    }, 10);
+
+    // Set end time
+    let endTime = Date.now() + time_limit * 1000;
+
+    // Show full time immediately
+    $('#timer').html(time_limit);
+
+    // Timer logic
+    time_out = setInterval(() => {
+        let remaining = Math.ceil((endTime - Date.now()) / 1000);
+
+        if (remaining <= 0) {
+            $('#timer').html('0');
+            clearInterval(time_out);
+
+            if (nextcounterauto == "F") {
+                $('#btnendexam').click();
+            }
+            $('.nextqns_' + nextqnsauto + '').click();
+
+        } else {
+            $('#timer').html(remaining);
+        }
+    }, 1000);
+}
+
+
+/*
 function CountTime(time_limit, sId, fId, type) {
     if (capflg == 1) {
         return false;
@@ -140,6 +275,7 @@ function CountTime(time_limit, sId, fId, type) {
     if (parseInt($("#hidexamtime").val()) > 0) {
         return false;
     }
+    setCookie("time_limit", time_limit,1)
     clearInterval(time_out);
     const circle = document.querySelector("svg circle");
 
@@ -201,9 +337,75 @@ function CountTime(time_limit, sId, fId, type) {
             time_limit -= 1;
         }
     }, 1000);
+}*/
+//let time_out;
+
+function CountTimeE(time_limit, sId, fId, type) {
+    if (capflg == 1) {
+        return false;
+    }
+    clearInterval(time_out);
+
+    // Convert minutes to seconds
+    let totalSeconds = Math.floor(time_limit * 60);
+
+    // Instead of decreasing each second, store the end time
+    let endTime = Date.now() + totalSeconds * 1000;
+
+    const circle = document.querySelector("svg circle");
+    const timeText = document.getElementById(fId);
+
+    // Reset previous animation
+    circle.style.animation = "none";
+    void circle.offsetWidth;
+
+    // Set circle properties
+    circle.setAttribute("stroke-dasharray", "113px");
+    circle.setAttribute("stroke-dashoffset", "5px");
+    circle.setAttribute("stroke-linecap", "round");
+    circle.setAttribute("stroke-width", "2px");
+    circle.setAttribute("stroke", "red");
+    circle.setAttribute("fill", "none");
+    circle.style.display = 'none';
+
+    // Remove old style
+    const oldStyle = document.getElementById("countdown-style");
+    if (oldStyle) oldStyle.remove();
+
+    // Add new style for animation
+    const style = document.createElement("style");
+    style.id = "countdown-style";
+    style.textContent = `
+        @keyframes countdown {
+            from { stroke-dashoffset: 5px; }
+            to { stroke-dashoffset: 113px; }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // Restart animation
+    setTimeout(() => {
+        circle.style.animation = `countdown ${totalSeconds}s linear forwards`;
+    }, 10);
+
+    // Timer logic using real time difference
+    time_out = setInterval(() => {
+        let remaining = Math.floor((endTime - Date.now()) / 1000);
+
+        if (remaining <= 0) {
+            $('#timer').html("0:00");
+            clearInterval(time_out);
+            $('#btnendexam').click();
+        } else {
+            let minutes = Math.floor(remaining / 60);
+            let seconds = remaining % 60;
+            $('#timer').html(`${minutes}:${seconds < 10 ? '0' : ''}${seconds}`);
+        }
+    }, 1000);
 }
 
 
+/*
 function CountTimeE(time_limit, sId, fId, type) {
     if (capflg == 1) {
         return false;
@@ -273,6 +475,7 @@ function CountTimeE(time_limit, sId, fId, type) {
         }
     }, 1000);
 }
+*/
 
 
 // Encryption function
@@ -374,6 +577,25 @@ var countDown;
 $(document).ready(function () {
     //chkUserParticipatedOrNot();
     // fnGetQuestionsonLang();
+
+    document.addEventListener('keyup', (e) => {
+        const isMac = navigator.platform.toUpperCase().includes('MAC');
+        const combo = (isMac && e.metaKey) || (!isMac && e.ctrlKey);
+        if (combo && e.key.toLowerCase() === 'p') {
+            e.preventDefault();
+            alert('Printing is disabled on this page.');
+        }
+        // Attempt to catch PrintScreen (not reliable across browsers)
+        if (e.key === 'Alt' || e.code === 'PrintScreen' || e.key === 'Control' || e.key === 'PrtScr') {
+            // Attempt to overwrite clipboard (may require https + user gesture)
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText('Screenshots are disabled on this page.')
+                    .catch(() => { });
+            }
+            //alert('Screenshots are discouraged on this page.');
+            e.preventDefault();
+        }
+    });
 
     var dropdown = $("#dynamic_select"); // Select the dropdown element
     var optionCount = dropdown.children('option').length; // Get the count of options
