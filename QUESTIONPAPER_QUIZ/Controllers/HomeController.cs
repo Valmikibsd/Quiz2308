@@ -516,7 +516,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
 
             return View();
         }
-
+        #region OldCode
         [HttpPost]
         public JsonResult fnGetQuestionsonLang(string uid, int ExamId)
         {
@@ -731,12 +731,15 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             return Json(JsonConvert.SerializeObject(rows));
         }
 
-
-        public IActionResult recaptchamatch(UserLogin user, string uname, string password, string examid, string langid, string Captcha)
+        #endregion
+        public IActionResult recaptchamatch(UserLogin user, string uname, string password, string examid, int langid, string Captcha)
         {
             dynamic captchaHash = HttpContext.Session.GetString("Captcha");
+            var captchastring = HttpContext.Session.GetString("captchaString");
             if (captchaHash == Convert.ToBase64String(System.Security.Cryptography.MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(user.Captcha.ToUpper()))))
             {
+                string query = $"insert into UserCaptcha(Captcha,CaptchaString,UserId,Flag)values('{Captcha}','{captchastring}','{uname}',{langid})";
+                var result = util.ExecQuery(query, util.strElect);
                 return Json(new { message = "Captcha matched", status = "Success" });
             }
             else
@@ -745,8 +748,8 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             }
         }
 
-
-            [HttpPost]
+        #region OldCode
+        [HttpPost]
         public IActionResult fnwbloginuser(UserLogin user, string uname, string password, string examid, string langid,string Captcha)
         {
 
@@ -1222,6 +1225,466 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             return functionReturnValue;
 
         }
+        #endregion
+
+        public IActionResult GetCaptchaL()
+{
+    const int width = 220;
+    const int height = 50;
+    const string fontFamily = "Tahoma";
+
+    var random = new Random();
+    int num1 = random.Next(1, 50);
+    int num2 = random.Next(1, 50);
+    int num3 = random.Next(1, 50);
+
+    string captchaString = $"Lowest: {num1}, {num2}, {num3}";
+    int lowest = Math.Min(num1, Math.Min(num2, num3));
+
+    var captchaHash = Convert.ToBase64String(
+        System.Security.Cryptography.MD5.Create()
+        .ComputeHash(System.Text.Encoding.UTF8.GetBytes(lowest.ToString()))
+    );
+
+    HttpContext.Session.SetString("captchaString", captchaString);
+    HttpContext.Session.SetString("Captcha", captchaHash);
+
+    using var bitmap = new System.Drawing.Bitmap(width, height);
+    using var g = System.Drawing.Graphics.FromImage(bitmap);
+    g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+    // Clear background (plain white)
+    g.Clear(System.Drawing.Color.White);
+
+    // Find appropriate font size
+    float fontSize = height;
+    System.Drawing.Font font;
+    do
+    {
+        fontSize -= 1;
+        font = new System.Drawing.Font(fontFamily, fontSize, System.Drawing.FontStyle.Bold);
+    } while (g.MeasureString(captchaString, font).Width > width);
+
+    using var textBrush = new System.Drawing.Drawing2D.HatchBrush(
+        System.Drawing.Drawing2D.HatchStyle.ZigZag,
+        System.Drawing.Color.DarkBlue,
+        System.Drawing.Color.Black
+    );
+
+    using var path = new System.Drawing.Drawing2D.GraphicsPath();
+    path.AddString(captchaString, font.FontFamily, (int)font.Style, font.Size, new System.Drawing.Rectangle(0, 0, width, height), new System.Drawing.StringFormat
+    {
+        Alignment = System.Drawing.StringAlignment.Center,
+        LineAlignment = System.Drawing.StringAlignment.Center
+    });
+
+    var warpPoints = new System.Drawing.PointF[4]
+    {
+        new(random.Next(width) / 4f, random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, random.Next(height) / 4f),
+        new(random.Next(width) / 4f, height - random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, height - random.Next(height) / 4f)
+    };
+
+    using var matrix = new System.Drawing.Drawing2D.Matrix();
+    path.Warp(warpPoints, new System.Drawing.Rectangle(0, 0, width, height), matrix, System.Drawing.Drawing2D.WarpMode.Perspective, 0);
+    g.FillPath(textBrush, path);
+
+    // Optional: Add minimal noise
+    int noiseCount = width * height / 100; // reduced noise
+    /*for (int i = 0; i < noiseCount; i++)
+    {
+        int x = random.Next(width);
+        int y = random.Next(height);
+        int w = random.Next(2);
+        int h = random.Next(2);
+        g.FillEllipse(textBrush, x, y, w, h);
+    }*/
+
+    using var stream = new System.IO.MemoryStream();
+    bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Png); // PNG supports transparency
+    var base64Image = Convert.ToBase64String(stream.ToArray());
+
+    return Json(new { base64Image });
+}
+
+   
+
+        public IActionResult GetCaptchaH()
+        {
+            // CAPTCHA configuration
+            const int width = 220;
+            const int height = 50;
+            const string fontFamily = "Tahoma";
+
+            // Generate three random numbers
+            var random = new Random();
+            int num1 = random.Next(1, 50);
+            int num2 = random.Next(1, 50);
+            int num3 = random.Next(1, 50);
+
+            // Question: "Highest: 12 7 5"
+            string captchaString = $"Highest: {num1}, {num2}, {num3}";
+
+            // Store the highest number in session
+            int highest = Math.Max(num1, Math.Max(num2, num3));
+
+            var captchaHash = Convert.ToBase64String(
+                System.Security.Cryptography.MD5.Create()
+                .ComputeHash(System.Text.Encoding.UTF8.GetBytes(highest.ToString()))
+            );
+            HttpContext.Session.SetString("captchaString", captchaString.ToString());
+            HttpContext.Session.SetString("Captcha", captchaHash.ToString());
+
+            // Create bitmap and graphics
+            using var bitmap = new System.Drawing.Bitmap(width, height);
+            using var g = System.Drawing.Graphics.FromImage(bitmap);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Draw background
+            var rect = new System.Drawing.Rectangle(0, 0, width, height);
+            using var backgroundBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            g.FillRectangle(backgroundBrush, rect);
+
+            // Option 2: Or simpler, just clear the graphics with white
+            g.Clear(System.Drawing.Color.White);
+
+            // Find appropriate font size
+            float fontSize = height;
+            System.Drawing.Font font;
+            do
+            {
+                fontSize -= 1;
+                font = new System.Drawing.Font(fontFamily, fontSize, System.Drawing.FontStyle.Bold);
+            } while (g.MeasureString(captchaString, font).Width > width);
+
+            // Draw text with random warping
+            using var textBrush = new System.Drawing.Drawing2D.HatchBrush(
+                System.Drawing.Drawing2D.HatchStyle.ZigZag,
+                System.Drawing.Color.DarkBlue,
+                System.Drawing.Color.Black
+            );
+            using var path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddString(captchaString, font.FontFamily, (int)font.Style, font.Size, rect, new System.Drawing.StringFormat
+            {
+                Alignment = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center
+            });
+
+            var warpPoints = new System.Drawing.PointF[4]
+            {
+        new(random.Next(width) / 4f, random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, random.Next(height) / 4f),
+        new(random.Next(width) / 4f, height - random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, height - random.Next(height) / 4f)
+            };
+
+            using var matrix = new System.Drawing.Drawing2D.Matrix();
+            path.Warp(warpPoints, rect, matrix, System.Drawing.Drawing2D.WarpMode.Perspective, 0);
+            g.FillPath(textBrush, path);
+
+            // Add noise
+           /* int noiseCount = width * height / 20;
+            for (int i = 0; i < noiseCount; i++)
+            {
+                int x = random.Next(width);
+                int y = random.Next(height);
+                int w = random.Next(4);
+                int h = random.Next(4);
+                g.FillEllipse(textBrush, x, y, w, h);
+            }*/
+
+            // Convert bitmap to base64 string
+            using var stream = new System.IO.MemoryStream();
+            bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            var base64Image = Convert.ToBase64String(stream.ToArray());
+
+            // Return as JSON
+            return Json(new { base64Image });
+        }
+
+        public IActionResult GetCaptchaDate()
+        {
+            // CAPTCHA configuration
+            const int width = 200;
+            const int height = 50;
+            const string fontFamily = "Tahoma";
+
+            // Get today's date in dd-MM-yyyy format
+            string captchaString = DateTime.Now.ToString("dd-MM-yyyy");
+
+            var captchaHash = Convert.ToBase64String(
+               System.Security.Cryptography.MD5.Create()
+               .ComputeHash(System.Text.Encoding.UTF8.GetBytes(captchaString.ToString()))
+           );
+
+            // Save date in session for validation
+            HttpContext.Session.SetString("captchaString", captchaString);
+            HttpContext.Session.SetString("Captcha", captchaHash);
+
+            // Create bitmap and graphics
+            using var bitmap = new System.Drawing.Bitmap(width, height);
+            using var g = System.Drawing.Graphics.FromImage(bitmap);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Draw background
+            var rect = new System.Drawing.Rectangle(0, 0, width, height);
+            using var backgroundBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            g.FillRectangle(backgroundBrush, rect);
+
+            // Option 2: Or simpler, just clear the graphics with white
+            g.Clear(System.Drawing.Color.White);
+
+            // Find appropriate font size
+            float fontSize = height;
+            System.Drawing.Font font;
+            do
+            {
+                fontSize -= 1;
+                font = new System.Drawing.Font(fontFamily, fontSize, System.Drawing.FontStyle.Bold);
+            } while (g.MeasureString(captchaString, font).Width > width);
+
+            // Draw text with random warping
+            using var textBrush = new System.Drawing.Drawing2D.HatchBrush(
+                System.Drawing.Drawing2D.HatchStyle.ZigZag,
+                System.Drawing.Color.DarkBlue,
+                System.Drawing.Color.Black
+            );
+            using var path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddString(captchaString, font.FontFamily, (int)font.Style, font.Size, rect, new System.Drawing.StringFormat
+            {
+                Alignment = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center
+            });
+
+            var random = new Random();
+            var warpPoints = new System.Drawing.PointF[4]
+            {
+        new(random.Next(width) / 4f, random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, random.Next(height) / 4f),
+        new(random.Next(width) / 4f, height - random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, height - random.Next(height) / 4f)
+            };
+
+            using var matrix = new System.Drawing.Drawing2D.Matrix();
+            path.Warp(warpPoints, rect, matrix, System.Drawing.Drawing2D.WarpMode.Perspective, 0);
+            g.FillPath(textBrush, path);
+
+            // Add noise
+          /*  int noiseCount = width * height / 20;
+            for (int i = 0; i < noiseCount; i++)
+            {
+                int x = random.Next(width);
+                int y = random.Next(height);
+                int w = random.Next(4);
+                int h = random.Next(4);
+                g.FillEllipse(textBrush, x, y, w, h);
+            }*/
+
+            // Convert bitmap to base64 string
+            using var stream = new System.IO.MemoryStream();
+            bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            var base64Image = Convert.ToBase64String(stream.ToArray());
+
+            // Return as JSON
+            return Json(new { base64Image });
+        }
+
+        
+
+
+
+        public IActionResult GetCaptchaCalp()
+        {
+            // CAPTCHA configuration
+            const int width = 200;
+            const int height = 50;
+            const string fontFamily = "Tahoma";
+
+            // Generate two random numbers for the calculation
+            var random = new Random();
+            int num1 = random.Next(1, 20);
+            int num2 = random.Next(1, 20);
+
+            // Create math question like "12 + 7 = ?"
+            string captchaString = $"{num1} + {num2} = ?";
+
+            // Save the correct answer in session
+            int answer = num1 + num2;
+
+            var captchaHash = Convert.ToBase64String(
+                System.Security.Cryptography.MD5.Create()
+                .ComputeHash(System.Text.Encoding.UTF8.GetBytes(answer.ToString()))
+            );
+            HttpContext.Session.SetString("captchaString", captchaString.ToString());
+            HttpContext.Session.SetString("Captcha", captchaHash.ToString());
+
+            // Create bitmap and graphics
+            using var bitmap = new System.Drawing.Bitmap(width, height);
+            using var g = System.Drawing.Graphics.FromImage(bitmap);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Draw background
+            var rect = new System.Drawing.Rectangle(0, 0, width, height);
+            using var backgroundBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            g.FillRectangle(backgroundBrush, rect);
+
+            // Option 2: Or simpler, just clear the graphics with white
+            g.Clear(System.Drawing.Color.White);
+
+            // Find appropriate font size
+            float fontSize = height;
+            System.Drawing.Font font;
+            do
+            {
+                fontSize -= 1;
+                font = new System.Drawing.Font(fontFamily, fontSize, System.Drawing.FontStyle.Bold);
+            } while (g.MeasureString(captchaString, font).Width > width);
+
+            // Draw text with random warping
+            using var textBrush = new System.Drawing.Drawing2D.HatchBrush(
+                System.Drawing.Drawing2D.HatchStyle.DashedUpwardDiagonal,
+                System.Drawing.Color.DarkBlue,
+                System.Drawing.Color.Black
+            );
+            using var path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddString(captchaString, font.FontFamily, (int)font.Style, font.Size, rect, new System.Drawing.StringFormat
+            {
+                Alignment = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center
+            });
+
+            var warpPoints = new System.Drawing.PointF[4]
+            {
+        new(random.Next(width) / 4f, random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, random.Next(height) / 4f),
+        new(random.Next(width) / 4f, height - random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, height - random.Next(height) / 4f)
+            };
+
+            using var matrix = new System.Drawing.Drawing2D.Matrix();
+            path.Warp(warpPoints, rect, matrix, System.Drawing.Drawing2D.WarpMode.Perspective, 0);
+            g.FillPath(textBrush, path);
+
+            // Add noise
+         /*   int noiseCount = width * height / 20;
+            for (int i = 0; i < noiseCount; i++)
+            {
+                int x = random.Next(width);
+                int y = random.Next(height);
+                int w = random.Next(4);
+                int h = random.Next(4);
+                g.FillEllipse(textBrush, x, y, w, h);
+            }*/
+
+            // Convert bitmap to base64 string
+            using var stream = new System.IO.MemoryStream();
+            bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            var base64Image = Convert.ToBase64String(stream.ToArray());
+
+            // Return as JSON
+            return Json(new { base64Image });
+        }
+
+
+
+
+        public IActionResult GetCaptchaCalm()
+        {
+            // CAPTCHA configuration
+            const int width = 200;
+            const int height = 50;
+            const string fontFamily = "Tahoma";
+
+            // Generate two random numbers for the calculation
+            var random = new Random();
+            int num1 = random.Next(1, 20);
+            int num2 = random.Next(1, 20);
+
+            // Create math question like "12 + 7 = ?"
+            string captchaString = $"{num1} - {num2} = ?";
+
+            // Save the correct answer in session
+            int answer = num1 - num2;
+
+            var captchaHash = Convert.ToBase64String(
+                System.Security.Cryptography.MD5.Create()
+                .ComputeHash(System.Text.Encoding.UTF8.GetBytes(answer.ToString()))
+            );
+            HttpContext.Session.SetString("captchaString", captchaString.ToString());
+            HttpContext.Session.SetString("Captcha", captchaHash.ToString());
+
+            // Create bitmap and graphics
+            using var bitmap = new System.Drawing.Bitmap(width, height);
+            using var g = System.Drawing.Graphics.FromImage(bitmap);
+            g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+            // Draw background
+            var rect = new System.Drawing.Rectangle(0, 0, width, height);
+            using var backgroundBrush = new System.Drawing.SolidBrush(System.Drawing.Color.White);
+            g.FillRectangle(backgroundBrush, rect);
+
+            // Option 2: Or simpler, just clear the graphics with white
+            g.Clear(System.Drawing.Color.White);
+
+            // Find appropriate font size
+            float fontSize = height;
+            System.Drawing.Font font;
+            do
+            {
+                fontSize -= 1;
+                font = new System.Drawing.Font(fontFamily, fontSize, System.Drawing.FontStyle.Bold);
+            } while (g.MeasureString(captchaString, font).Width > width);
+
+            // Draw text with random warping
+            using var textBrush = new System.Drawing.Drawing2D.HatchBrush(
+                System.Drawing.Drawing2D.HatchStyle.DashedUpwardDiagonal,
+                System.Drawing.Color.DarkBlue,
+                System.Drawing.Color.Black
+            );
+            using var path = new System.Drawing.Drawing2D.GraphicsPath();
+            path.AddString(captchaString, font.FontFamily, (int)font.Style, font.Size, rect, new System.Drawing.StringFormat
+            {
+                Alignment = System.Drawing.StringAlignment.Center,
+                LineAlignment = System.Drawing.StringAlignment.Center
+            });
+
+            var warpPoints = new System.Drawing.PointF[4]
+            {
+        new(random.Next(width) / 4f, random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, random.Next(height) / 4f),
+        new(random.Next(width) / 4f, height - random.Next(height) / 4f),
+        new(width - random.Next(width) / 4f, height - random.Next(height) / 4f)
+            };
+
+            using var matrix = new System.Drawing.Drawing2D.Matrix();
+            path.Warp(warpPoints, rect, matrix, System.Drawing.Drawing2D.WarpMode.Perspective, 0);
+            g.FillPath(textBrush, path);
+
+            // Add noise
+          /*  int noiseCount = width * height / 20;
+            for (int i = 0; i < noiseCount; i++)
+            {
+                int x = random.Next(width);
+                int y = random.Next(height);
+                int w = random.Next(4);
+                int h = random.Next(4);
+                g.FillEllipse(textBrush, x, y, w, h);
+            }
+          */
+
+            // Convert bitmap to base64 string
+            using var stream = new System.IO.MemoryStream();
+            bitmap.Save(stream, System.Drawing.Imaging.ImageFormat.Jpeg);
+            var base64Image = Convert.ToBase64String(stream.ToArray());
+
+            // Return as JSON
+            return Json(new { base64Image });
+        }
+
+
+
+
         public IActionResult GetCaptcha()
         {
             // CAPTCHA configuration
@@ -1240,6 +1703,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                 System.Security.Cryptography.MD5.Create()
                 .ComputeHash(System.Text.Encoding.UTF8.GetBytes(captchaString))
             );
+            HttpContext.Session.SetString("captchaString", captchaString);
             HttpContext.Session.SetString("Captcha", captchaHash);
 
             // Create bitmap and graphics

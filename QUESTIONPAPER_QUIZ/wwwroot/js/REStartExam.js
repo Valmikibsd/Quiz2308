@@ -1,4 +1,4 @@
-﻿var countqno = 1, capflg = 0;;// parseInt(getCookie("countqno") || "0");
+﻿var countqno = 1, capflg = 0, capno = 0;// parseInt(getCookie("countqno") || "0");
 
 
 
@@ -60,7 +60,7 @@ $("#btnSubmit").bind("click", function () {
             type: "POST",
             url: "/Home/recaptchamatch",
             //   contentType: "application/json",
-            data: { uname: '', password: '', examid: 22, langid: 18, Captcha: Captchas },
+            data: { uname: $('#hdfUserId').val(), password: '', examid: 22, langid: capno, Captcha: Captchas },
             //contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (response) {
@@ -80,6 +80,7 @@ $("#btnSubmit").bind("click", function () {
                     });
                 } else {
                     capflg = 0;
+                    capno++;
                     document.getElementById('divloading').style.display = 'none';
                     //$('.coverlay').css('display', 'none');
                     //$('.capt').css('display', 'none');
@@ -564,6 +565,7 @@ function fnGetQuestions() {
             var tableData = data.Data;
             $("#hdfcapt").val(tableData[0].CaptchaFlag);
             $("#hidexamtime").val(tableData[0].examtime);
+            $("#hidcapttime").val(tableData[0].CaptchaQno);
             //var tableData = JSON.parse(data);
             $('.popup').css('display', 'none');
             $('.mock-question').css('display', 'block');
@@ -877,9 +879,23 @@ function updateQuestiontime(queid) {
     });
 }
 function fngetnewcode() {
+    var url = "/Home/GetCaptcha";
+    if (capno == 1) {
+        url = "/Home/GetCaptchaDate";
+    } else if (capno == 2) {
+        url = "/Home/GetCaptchaCalp";
+    } else if (capno == 3) {
+        url = "/Home/GetCaptchaCalm";
+    }
+    else if (capno == 4) {
+        url = "/Home/GetCaptchaH";
+    }
+    else if (capno == 5) {
+        url = "/Home/GetCaptchaL";
+    }
     $.ajax({
         type: "POST",
-        url: "/Home/GetCaptcha",
+        url: url,
         contentType: 'application/json; charset=utf-8',
         datatype: "json",
         success: function (data) {

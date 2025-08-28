@@ -1,0 +1,8 @@
+27/08/2025 10:29:21 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+27/08/2025 10:35:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+27/08/2025 10:35:57 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+27/08/2025 10:36:29 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'' -  -  -  -  -  - Fill
+27/08/2025 10:37:08 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+27/08/2025 10:38:03 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+27/08/2025 10:39:22 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+27/08/2025 10:39:23 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1676,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
