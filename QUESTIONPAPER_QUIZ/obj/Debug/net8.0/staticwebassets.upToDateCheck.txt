@@ -112,16 +112,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\LOG\ApiLog\02-09-2025.txt
-wwwroot\LOG\ApiLog\20-08-2025.txt
-wwwroot\LOG\ApiLog\21-08-2025.txt
-wwwroot\LOG\ApiLog\22-08-2025.txt
-wwwroot\LOG\ApiLog\23-08-2025.txt
-wwwroot\LOG\ApiLog\25-08-2025.txt
-wwwroot\LOG\ApiLog\26-08-2025.txt
-wwwroot\LOG\ApiLog\27-08-2025.txt
-wwwroot\LOG\ApiLog\28-08-2025.txt
-wwwroot\LOG\ErrorLog\20-08-2025.txt
-wwwroot\LOG\ErrorLog\21-08-2025.txt
-wwwroot\LOG\ErrorLog\25-08-2025.txt
-wwwroot\LOG\ApiLog\03-09-2025.txt

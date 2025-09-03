@@ -13,6 +13,17 @@ function setCookie(name, value, days) {
     document.cookie = name + "=" + (value || "") + expires + "; path=/";
 }
 
+
+const AsetCookies = (name, value, days) => {
+    let expires = "";
+    if (days) {
+        let d = new Date();
+        d.setTime(d.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + d.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
 // Get cookie
 function getCookie(name) {
     let nameEQ = name + "=";
