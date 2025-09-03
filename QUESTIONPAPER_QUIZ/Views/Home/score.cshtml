@@ -94,6 +94,7 @@
     <input type="hidden" id="hdfExamId" value="@ViewBag.ExamId" />
     <input type="hidden" id="hdfUserId" value="@ViewBag.uid" />
     <input type="hidden" id="hdfUserName" value="@ViewBag.uname" />
+        <input type="hidden" id="hidesession" value="@ViewBag.examsession" />
         <input type="hidden" id="hdfaddress" value="" />
     <div class="tagline">Performance Report</div>
     <input type="hidden" id="hdfTitle" /> 
@@ -213,7 +214,7 @@ var addHtml1 = "";
         var addHtml = "";
 
          var jdata = {
-             uid: $('#hdfUserId').val(),examid: $("#hdfExamId").val(), type: 'getreport'
+             uid: $('#hdfUserId').val(),examid: $("#hdfExamId").val(), type: 'getreport',sessid:$("#hidesession").val()
          }
             url_add = window.location.href;
             var data = url_add.split("://")

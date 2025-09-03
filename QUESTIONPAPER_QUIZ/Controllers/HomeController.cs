@@ -1,21 +1,22 @@
+using Microsoft.AspNetCore.DataProtection.KeyManagement;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using QUESTIONPAPER_QUIZ.Models;
-using System.Data.SqlClient;
-using System.Data;
-using System.Diagnostics;
+using Microsoft.CodeAnalysis.Options;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
+using QUESTIONPAPER_QUIZ.Models;
+using System;
+using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Net;
 using System.Net.Http;
+using System.Net.Mail;
+using System.Reflection;
+using System.Security.Cryptography;
 using System.Text;
 using static System.Collections.Specialized.BitVector32;
-using Microsoft.Extensions.Caching.Memory;
-using Microsoft.AspNetCore.DataProtection.KeyManagement;
-using System.Reflection;
-using System.Net;
-using System.Net.Mail;
-using System;
-using Microsoft.Extensions.Hosting;
-using Microsoft.CodeAnalysis.Options;
-using System.Security.Cryptography;
 
 namespace QUESTIONPAPER_QUIZ.Controllers
 {
@@ -203,6 +204,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             ViewBag.ExamId = HttpContext.GetRouteValue("ExamId");
             string ExamId = ViewBag.ExamId;
             var userid = HttpContext.Request.Cookies["uid"];
+            string examsession = HttpContext.Request.Cookies["examsession"];
 
             var unmae = HttpContext.Request.Cookies["uname"];
 
@@ -215,6 +217,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             }
 
 
+            ViewBag.examsession = examsession;
             ViewBag.uid = userid;
             ViewBag.uname = unmae;
 
@@ -375,9 +378,10 @@ namespace QUESTIONPAPER_QUIZ.Controllers
         [Route("/Home/StartExam/{ExamId}")]
         public IActionResult StartExam()
         {
-        
-          
-
+            
+            CookieOptions option = new CookieOptions();
+            option.Expires = DateTime.Now.AddHours(2);
+            string session = DateTime.Now.Ticks.ToString();
             ViewBag.ExamId = HttpContext.GetRouteValue("ExamId");
             string ExamId = ViewBag.ExamId;
 
@@ -412,11 +416,12 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                         {
                             if (DT1.Rows[0]["finalendexam"].ToString() == "1")
                             {
+                                Response.Cookies.Append("examsession", session, option);
                                 return Redirect("/home/score/"+ExamId);
                             }
                             if (Convert.ToInt32(DT1.Rows[0]["totalnoofq"].ToString()) > 0)
                             {
-
+                                Response.Cookies.Append("examsession", session, option);
                                 return Redirect("/home/score/"+ExamId);
                             }
                            // return Redirect("/home/examlogin/" + ExamId);
@@ -444,7 +449,10 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             ViewBag.uname = unmae;
             ViewBag.BindLanguage = util.PopulateDropDownjson("exec Usp_exam_new_json @Action='BindLanuage',@ExamId='" + ExamId + "'", util.strElect);
             DataTable dt = new DataTable();
-           
+            
+            Response.Cookies.Append("examsession", session, option);
+            string query = $"update tblSOE_Users set EXAMSESSION='{session}' where userid='{userid}'";
+            var result = util.ExecQuery(query, util.strElect);
             return View();
         }
         [Route("/Home/REStartExam/{ExamId}")]
@@ -732,13 +740,13 @@ namespace QUESTIONPAPER_QUIZ.Controllers
         }
 
         #endregion
-        public IActionResult recaptchamatch(UserLogin user, string uname, string password, string examid, int langid, string Captcha)
+        public IActionResult recaptchamatch(UserLogin user, string uname, int password, string examid, int langid, string Captcha)
         {
             dynamic captchaHash = HttpContext.Session.GetString("Captcha");
             var captchastring = HttpContext.Session.GetString("captchaString");
             if (captchaHash == Convert.ToBase64String(System.Security.Cryptography.MD5.Create().ComputeHash(Encoding.UTF8.GetBytes(user.Captcha.ToUpper()))))
             {
-                string query = $"insert into UserCaptcha(Captcha,CaptchaString,UserId,Flag)values('{Captcha}','{captchastring}','{uname}',{langid})";
+                string query = $"insert into UserCaptcha(Captcha,CaptchaString,UserId,Flag,AttemptFlg)values('{Captcha}','{captchastring}','{uname}',{langid},{password})";
                 var result = util.ExecQuery(query, util.strElect);
                 return Json(new { message = "Captcha matched", status = "Success" });
             }
@@ -752,7 +760,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
         [HttpPost]
         public IActionResult fnwbloginuser(UserLogin user, string uname, string password, string examid, string langid,string Captcha)
         {
-
+            //string usersession
             string message = "", status = "";
             var log = new List<string>();
 
@@ -771,7 +779,9 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                 {
                     try
                     {
-                        if (con.State == ConnectionState.Closed)
+                            Response.Cookies.Append("examsession", "0987654322", option);
+
+                            if (con.State == ConnectionState.Closed)
                             con.Open();
                         cmd.CommandType = CommandType.Text;
                         cmd.Parameters.AddWithValue("@username", user.uname);
@@ -1226,7 +1236,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
 
         }
         #endregion
-
+        #region Captcha
         public IActionResult GetCaptchaL()
 {
     const int width = 220;
@@ -1773,6 +1783,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
             // Return as JSON
             return Json(new { base64Image });
         }
+        #endregion
         [HttpPost]
         public IActionResult feedback( string Name, string Email, string Query)
         {

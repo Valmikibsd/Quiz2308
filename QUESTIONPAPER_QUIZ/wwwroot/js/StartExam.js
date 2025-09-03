@@ -59,12 +59,12 @@ $("#btnSubmit").bind("click", function () {
             type: "POST",
             url: "/Home/recaptchamatch",
             //   contentType: "application/json",
-            data: { uname: $('#hdfUserId').val(), password: '', examid: 22, langid: capno, Captcha: Captchas },
+            data: { uname: $('#hdfUserId').val(), password: 1, examid: 22, langid: capno, Captcha: Captchas },
             //contentType: "application/json; charset=utf-8",
             dataType: "json",
             success: function (response) {
 
-
+                document.getElementById('divloading').style.display = 'none';
                 let status = response.status;
                 let message = response.message;
 
@@ -80,6 +80,7 @@ $("#btnSubmit").bind("click", function () {
                 } else {
                     capflg = 0;
                     capno++;
+                    if (capno > 5) { capno =0}
                     document.getElementById('divloading').style.display = 'none';
                     //$('.coverlay').css('display', 'none');
                     //$('.capt').css('display', 'none');

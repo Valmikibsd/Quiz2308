@@ -1,1 +1,0 @@
-25/08/2025 15:49:43 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport"}'---Output--Invalid column name 'ReFlag'.' -  -  -  -  -  - Fill
