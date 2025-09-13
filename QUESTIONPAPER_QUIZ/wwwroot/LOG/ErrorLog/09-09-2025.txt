@@ -1,0 +1,2 @@
+09/09/2025 14:16:37 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"2024","langid":"18","type":"getquestions"}'---Output--Conversion failed when converting the varchar value '29:21' to data type int.' -  -  -  -  -  - Fill
+09/09/2025 14:16:51 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"2024","langid":"18","type":"getquestions"}'---Output--Conversion failed when converting the varchar value '29:21' to data type int.' -  -  -  -  -  - Fill

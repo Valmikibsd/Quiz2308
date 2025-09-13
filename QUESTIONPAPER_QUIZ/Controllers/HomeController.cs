@@ -419,11 +419,11 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                                 Response.Cookies.Append("examsession", session, option);
                                 return Redirect("/home/score/"+ExamId);
                             }
-                            if (Convert.ToInt32(DT1.Rows[0]["totalnoofq"].ToString()) > 0)
-                            {
-                                Response.Cookies.Append("examsession", session, option);
-                                return Redirect("/home/score/"+ExamId);
-                            }
+                            //if (Convert.ToInt32(DT1.Rows[0]["totalnoofq"].ToString()) > 0)
+                            //{
+                            //    Response.Cookies.Append("examsession", session, option);
+                            //    return Redirect("/home/score/"+ExamId);
+                            //}
                            // return Redirect("/home/examlogin/" + ExamId);
                         }
                         else
@@ -775,7 +775,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                 option.Expires = DateTime.Now.AddHours(2);
                 using (SqlConnection con = new SqlConnection(util.strElect))
              {
-                using (SqlCommand cmd = new SqlCommand("select  name,USERID,isnull(totalnoofq,0) totalnoofq,ISNULL(DOMAIN_NAME,'')DOMAIN_NAME,isnull(address_user,'')address_user  from tblSOE_Users WITH (NOLOCK) where userid=@username and password=@pwd ; SELECT * FROM  [tblEXDATE] where getdate() between EXAtime and endtime ", con))
+                using (SqlCommand cmd = new SqlCommand("select  name,USERID,isnull(totalnoofq,0) totalnoofq,finalendexam endexam,ISNULL(DOMAIN_NAME,'')DOMAIN_NAME,isnull(address_user,'')address_user  from tblSOE_Users WITH (NOLOCK) where userid=@username and password=@pwd ; SELECT * FROM  [tblEXDATE] where getdate() between EXAtime and endtime ", con))
                 {
                     try
                     {
@@ -799,7 +799,7 @@ namespace QUESTIONPAPER_QUIZ.Controllers
                                 {
                                    
 
-                                        if (Convert.ToInt32(ds.Tables[0].Rows[0]["totalnoofq"].ToString()) > 0)
+                                        if (Convert.ToInt32(ds.Tables[0].Rows[0]["endexam"].ToString()) == 1)
                                         {
 
                                             Response.Cookies.Append("uname", ds.Tables[0].Rows[0]["name"].ToString(), option);

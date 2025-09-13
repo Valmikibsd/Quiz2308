@@ -358,9 +358,15 @@ function CountTimeE(time_limit, sId, fId, type) {
         return false;
     }
     clearInterval(time_out);
-
-    // Convert minutes to seconds
     let totalSeconds = Math.floor(time_limit * 60);
+    // Convert minutes to seconds
+    if ($("#hidremflag").val() == 1) {
+        totalSeconds = time_limit;
+    }
+    //else {
+
+   // }
+    //let totalSeconds = Math.floor(time_limit * 60);
 
     // Instead of decreasing each second, store the end time
     let endTime = Date.now() + totalSeconds * 1000;
@@ -404,6 +410,7 @@ function CountTimeE(time_limit, sId, fId, type) {
     // Timer logic using real time difference
     time_out = setInterval(() => {
         let remaining = Math.floor((endTime - Date.now()) / 1000);
+        $("#hidremsec").val(remaining);
 
         if (remaining <= 0) {
             $('#timer').html("0:00");
@@ -698,6 +705,7 @@ function fnGetQuestions() {
             $("#hdfcapt").val(tableData[0].CaptchaFlag);
             $("#hidexamtime").val(tableData[0].examtime);
             $("#hidcapttime").val(tableData[0].CaptchaQno);
+            $("#hidremflag").val(tableData[0].remflag);
             $('.popup').css('display', 'none');
             $('.mock-question').css('display', 'block');
             if (tableData != null || tableData != undefined || tableData != '') {
@@ -808,6 +816,10 @@ function fnSingleQuestion(tableData) {
     $('#divQuestionsAnsSheet').html(htmlContent);
     //$('#headerhtml').text(tableData[0].Header);
     //$('#footerhtml').text(tableData[0].Footer);
+    var rn = tableData[0].rn
+    if (tableData[0].remflag == 1) { 
+        fnBackNext(rn, rn - 1, 45, tableData[rn + 1].QNS_ID);
+    }
 }
 
 function fnMultipleQuestion(tableData) {
@@ -990,7 +1002,7 @@ function fnBackNext(sId, fId, totalnoofq, queid) {
 
 function updateQuestiontime(queid) {
     var jdata = {
-        uid: $("#hdfUserId").val(), qnsid: queid, examid: $("#hdfExamId").val() , type: 'updateqnstime'
+        uid: $("#hdfUserId").val(), qnsid: queid, examid: $("#hdfExamId").val(), rem:$("#hidremsec").val() , type: 'updateqnstime'
     }
     url_add = window.location.href;
     var data = url_add.split("://")
@@ -1091,7 +1103,7 @@ function fnOptionEndExam(sId, fId, QnsId, OptId) {
     }
 
     var jdata = {
-        rzs: totalAttempt, gzs: correctAns, uid: $("#hdfUserId").val(), qnsid: QnsId, optid: OptId, rightans: rightans, type: 'optsubmitans'
+        rzs: totalAttempt, gzs: correctAns, uid: $("#hdfUserId").val(), qnsid: QnsId, optid: OptId, rightans: rightans, rem: $("#hidremsec").val(), type: 'optsubmitans'
     }
     url_add = window.location.href;
     var data = url_add.split("://")

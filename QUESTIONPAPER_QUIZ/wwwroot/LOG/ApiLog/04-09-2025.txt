@@ -1,0 +1,98 @@
+04/09/2025 09:43:49 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport","sessid":"0987654322"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:23 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","langid":"18","type":"getquestions"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:36 - input'SP_QuizApi N'{"rzs":1,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1673,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:37 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1674,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:41 - input'SP_QuizApi N'{"rzs":2,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1674,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:41 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1676,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:48 - input'SP_QuizApi N'{"rzs":3,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1676,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:56:49 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1677,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:00 - input'SP_QuizApi N'{"rzs":4,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1677,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:01 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1680,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:04 - input'SP_QuizApi N'{"rzs":5,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1680,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:14 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1681,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:31 - input'SP_QuizApi N'{"rzs":6,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1681,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:46 - input'SP_QuizApi N'{"rzs":6,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1681,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:57:52 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1682,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:04 - input'SP_QuizApi N'{"rzs":7,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1682,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:05 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1683,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:11 - input'SP_QuizApi N'{"rzs":8,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1683,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1684,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:22 - input'SP_QuizApi N'{"rzs":9,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1684,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:23 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1685,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:27 - input'SP_QuizApi N'{"rzs":10,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1685,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:41 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1686,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:55 - input'SP_QuizApi N'{"rzs":11,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1686,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:55 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1687,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:58:59 - input'SP_QuizApi N'{"rzs":12,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1687,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:00 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1688,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:11 - input'SP_QuizApi N'{"rzs":13,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1688,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:12 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1689,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:18 - input'SP_QuizApi N'{"rzs":14,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1689,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1691,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:34 - input'SP_QuizApi N'{"rzs":15,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1691,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 09:59:51 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1692,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:05 - input'SP_QuizApi N'{"rzs":16,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1692,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:07 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1693,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:15 - input'SP_QuizApi N'{"rzs":17,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1693,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:16 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1695,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:26 - input'SP_QuizApi N'{"rzs":18,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1695,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:27 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1696,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:34 - input'SP_QuizApi N'{"rzs":19,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1696,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:34 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1698,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:00:55 - input'SP_QuizApi N'{"rzs":20,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1698,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:01:03 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1701,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:01:29 - input'SP_QuizApi N'{"rzs":21,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1701,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:01:30 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1704,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:06 - input'SP_QuizApi N'{"rzs":22,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1704,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:07 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1705,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:27 - input'SP_QuizApi N'{"rzs":23,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1705,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:28 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1707,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:39 - input'SP_QuizApi N'{"rzs":24,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1707,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:41 - input'SP_QuizApi N'{"rzs":24,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1707,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:42 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1708,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:52 - input'SP_QuizApi N'{"rzs":25,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1708,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:02:55 - input'SP_QuizApi N'{"rzs":25,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1708,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:01 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1709,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:09 - input'SP_QuizApi N'{"rzs":26,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1709,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:09 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1711,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:30 - input'SP_QuizApi N'{"rzs":27,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1711,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:31 - input'SP_QuizApi N'{"rzs":27,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1711,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:33 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1712,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:48 - input'SP_QuizApi N'{"rzs":28,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1712,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:03:49 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1713,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:04:39 - input'SP_QuizApi N'{"rzs":29,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1713,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:04:40 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1715,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:13 - input'SP_QuizApi N'{"rzs":30,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1715,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:19 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1716,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:28 - input'SP_QuizApi N'{"rzs":31,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1716,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:29 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1717,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:48 - input'SP_QuizApi N'{"rzs":32,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1717,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:49 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1719,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:55 - input'SP_QuizApi N'{"rzs":33,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1719,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:05:58 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1720,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:15 - input'SP_QuizApi N'{"rzs":34,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1720,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:16 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1721,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:26 - input'SP_QuizApi N'{"rzs":35,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1721,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1722,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:45 - input'SP_QuizApi N'{"rzs":36,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1722,"optid":4,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:06:46 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1724,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:02 - input'SP_QuizApi N'{"rzs":37,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1724,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:03 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1725,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:10 - input'SP_QuizApi N'{"rzs":38,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1725,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:11 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1726,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:34 - input'SP_QuizApi N'{"rzs":39,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1726,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:35 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1727,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:45 - input'SP_QuizApi N'{"rzs":40,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1727,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:07:56 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1728,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:01 - input'SP_QuizApi N'{"rzs":41,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1728,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:03 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1730,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:21 - input'SP_QuizApi N'{"rzs":42,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1730,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:28 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1731,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:57 - input'SP_QuizApi N'{"rzs":43,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1731,"optid":2,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:08:58 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1734,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:09:15 - input'SP_QuizApi N'{"rzs":44,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1734,"optid":3,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:09:16 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","qnsid":1735,"examid":"22","type":"updateqnstime"}'' -  -  -  -  -  - Fill
+04/09/2025 10:09:37 - input'SP_QuizApi N'{"rzs":45,"gzs":0,"uid":"ajaysainim@gmail.com","qnsid":1735,"optid":1,"rightans":"choose please","type":"optsubmitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:09:40 - input'SP_QuizApi N'{"rzs":45,"gzs":0,"uid":"ajaysainim@gmail.com","type":"submitans"}'' -  -  -  -  -  - Fill
+04/09/2025 10:09:41 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport","sessid":"638925765825026760"}'' -  -  -  -  -  - Fill
+04/09/2025 10:15:44 - input'SP_QuizApi N'{"uid":"ajaysainim@gmail.com","examid":"22","type":"getreport","sessid":"0987654322"}'' -  -  -  -  -  - Fill

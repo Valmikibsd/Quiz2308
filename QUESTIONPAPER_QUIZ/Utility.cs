@@ -32,10 +32,13 @@ namespace QUESTIONPAPER_QUIZ
         //SqlConnection sqcon = new SqlConnection(@"Data Source=216.48.185.135,1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=MW{N~go=V26DNT-y@8");
         //public string strElect = @"Data Source=216.48.185.135,1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=MW{N~go=V26DNT-y@8";
 
-        SqlConnection sqcon = new SqlConnection(@"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%");
-        public string strElect = @"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%";
+        //SqlConnection sqcon = new SqlConnection(@"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%");
+        SqlConnection sqcon = new SqlConnection(@"Data Source=180.179.213.195, 1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=C2.uOf}10.OtfHp,6d");
+        public string strElect = @"Data Source=180.179.213.195,1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=C2.uOf}10.OtfHp,6d";
+        //public string strElect = @"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%";
 
-        public string cs = @"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%";
+        public string cs = @"Data Source=180.179.213.195,1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=C2.uOf}10.OtfHp,6d";
+        //public string cs = @"Data Source=101.53.144.187,1533;Initial Catalog=INDIASTATQUIZ;User ID=indiastatquiz;Password=India@2025$%";
         //public string cs = @"Data Source=216.48.185.135,1533;Initial Catalog=INDIASTATQUIZ;User ID=sa;Password=MW{N~go=V26DNT-y@8;MultipleActiveResultSets=True;pooling=true;Max Pool Size=10000;Connection Timeout=30";
 
 
